@@ -1,0 +1,44 @@
+<script type="text/javascript" language="javascript">
+<!-- Debut
+// ***************************************************
+// FONCTION: TW_mailtoBody
+// Fonction pour envoyer un formulaire avec MAILTO
+// Auteur : Django Blais (Oznog)
+// SiteWeb : http://www.trucsweb.com
+// Création: 8/19/2001 12:30PM
+// Ne pas enlever cette remarque S.V.P.
+// ATTENTION *****************************************
+// Rien ne garantit la compatibilité de cette fonction
+// relative au logiciel de messagerie du visiteur.
+// ***************************************************
+
+// Construction de l’en-tête, pied et sujet du formulaire
+// NOTE, pour sauter une ligne, utilisez : \n
+//nEntete = "[Ceci est un message envoyé depuis JGC]\n\n";
+nPied = "\n\n[http://www.sulfehn.free/gages.com]";
+nSujet = "[JGC] - Contact via formulaire";
+
+// Mettre "False" pour ne pas envoyer les champs HIDDEN
+nHiddenOk = 1; // Vrais = 1, Faux = 0
+
+// Ne rien modifier à partir d’ici
+var nRg = / /g;
+nSujet = nSujet.replace(nRg,"\t");
+
+function TW_mailtoBody(nForm) {
+  nForm.elements["Subject"].value = nSujet;
+  nForm.elements["Body"].value = nForm.elements["Body"].value + nPied;
+  nForm.elements["Body"].value = nForm.elements["Body"].value.replace(nRg,"\t");
+}
+// Fin -->
+</script>
+
+<form action="mailto:mousshk@gmail.com.com" method="get" name="MonForm" enctype="multipart/form-data"> 
+
+<!-- Corps (BODY) et sujet (SUBJECT) du formulaire. -->
+<input type="hidden" name="Subject" value="Message de JGC">
+<input type="hidden" name="Body" value="">
+
+<input type="submit" name="Submit" value="Soumettre" onClick="TW_mailtoBody(this.form)">
+
+</form>
