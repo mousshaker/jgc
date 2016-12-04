@@ -49,6 +49,7 @@ $aGageP2 = array(
 15=> "Mordiller et embrasser une fois, chacune des fesses de l'autre",
 16=> "Se faire parcourir tout le corps avec un glaçon (jusqu'à ce qu'il soit fondu)",
 17=> "Se caresser le corps devant l'autre, sans le quitter du regard. Sous-vêtements autorisés (30 sec)",
+18=>"simuler une levrette (en donnant les mouvements de bassins) tout en étant habillé",
 );
 
 $total_gage_page2 = count($aGageP2);
@@ -124,16 +125,12 @@ $aGageP8 = array(
 18=>"Se faire attraper les cheveux/tête fermement et amener la tête jusqu'au sexe de l'autre. Puis embrasser son sexe",
 19=>"Caresser/masturber le sexe de l'autre d'une main en lui serrant la gorge de l'autre main (30sec)",
 
-
-
-
-
 );
 $total_gage_page8 = count($aGageP8);
 
 
 /*** page 9 ***/
-### ILLUSTRATION ###
+### ILLUSTRATIONS ###
 
 # gages filles #
 $aGageSampleGirl = array(
