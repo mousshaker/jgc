@@ -16,7 +16,7 @@ include($gage_page);
 
 
 <div class="levelTitle <?php echo $page6; ?>">
-<?php echo $page6; ?><br>
+Exemples<br>
 </div>
 <div class="wrapper" style="overflow-x:auto;">
 	<div class="contenu">
