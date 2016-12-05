@@ -16,6 +16,9 @@ $randLetter = rand(0,$nbLettre-1);
 $randNum=rand(1,$nbChiffre);//choix du chiffre
 
 if (isset($_POST['chooseCombo']) OR isset($_POST['chooseLetter']) OR isset($_POST['chooseNum'])){
+	
+	# on vérifie que le fichier existe, sinon il se crée
+	wLogRead($dataPath,$page5);
 	//on efface le fichier mémo précédant
 	wLogErase($path,$page5);
 

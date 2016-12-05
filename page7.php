@@ -31,6 +31,8 @@ if (isset($_POST['joueur1'])){// Si le bouton "des" est actionné
 		$newScore = $oldScore-$resultat;
 	}
 
+	# on vérifie que le fichier existe, sinon il se crée
+	wLogRead($dataPath,'joueur1');
 	
 	//on efface le fichier précédant
 	wLogErase($dataPath,'joueur1');
@@ -59,6 +61,8 @@ if (isset($_POST['joueur2'])){// Si le bouton "des" est actionné
 		$newScore = $oldScore-$resultat;
 	}
 
+	# on vérifie que le fichier existe, sinon il se crée
+	wLogRead($dataPath,'joueur1');
 	
 	//on efface le fichier précédant
 	wLogErase($dataPath,'joueur2');
@@ -73,6 +77,11 @@ if (isset($_POST['joueur2'])){// Si le bouton "des" est actionné
 	unset($oldScore);
 }
 if(isset($_POST['erase'])){
+	
+	# on vérifie que le fichier existe, sinon il se crée
+	wLogRead($dataPath,'joueur1');
+	wLogRead($dataPath,'joueur2');
+
 	//on efface le fichier précédant
 	wLogErase($dataPath,'joueur1');
 	wLogErase($dataPath,'joueur2');

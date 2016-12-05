@@ -20,6 +20,9 @@ if (isset($_POST['resultNb'])){// Si le bouton "des" est actionné
 	
 	$choix=rand(1,$limit);// Alors fait un random entre 1 et 12
 	
+	# on vérifie que le fichier existe, sinon il se crée
+	wLogRead($dataPath,$page3);
+	
 	//on efface le fichier précédant
 	wLogErase($dataPath,$page3);
 

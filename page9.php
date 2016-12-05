@@ -21,6 +21,8 @@ if (isset($_POST['girl'])){// Si le bouton "des" est actionné
 	$lastPlayer = 1;
 	$choix=rand(1,sizeof($aGageSampleGirl));// Alors fait un random entre 1 et 12
 
+	# on vérifie que le fichier existe, sinon il se crée
+	wLogRead($dataPath,'girl');
 	#on efface le fichier précédant
 	wLogErase($dataPath,'girl');
 
@@ -37,6 +39,10 @@ if (isset($_POST['man'])){// Si le bouton "des" est actionné
 
 	$choix=rand(1,sizeof($aGageSampleMan));// Alors fait un random entre 1 et 12
 
+	
+	# on vérifie que le fichier existe, sinon il se crée
+	wLogRead($dataPath,'man');
+
 	#on efface le fichier précédant
 	wLogErase($dataPath,'man');
 
@@ -48,6 +54,11 @@ if (isset($_POST['man'])){// Si le bouton "des" est actionné
 }
 
 if(isset($_POST['erase'])){
+	
+	# on vérifie que le fichier existe, sinon il se crée
+	wLogRead($dataPath,'girl');
+	wLogRead($dataPath,'man');
+	
 	//on efface le fichier précédant
 	wLogErase($dataPath,'girl');
 	wLogErase($dataPath,'man');
