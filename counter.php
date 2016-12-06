@@ -17,7 +17,6 @@ pageTitle($siteTitleShort,$page1);
 
 		<br><br>
 		Bon jeu !
-
 	</div>
 </div>
 

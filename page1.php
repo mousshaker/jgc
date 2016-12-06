@@ -9,8 +9,6 @@ pageTitle($siteTitleShort,$page1);
 include($gage_page);
 
 
-
-
 $limit = $total_gage_page1;
 $vGage=$aGageP1;
 

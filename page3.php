@@ -9,11 +9,8 @@ pageTitle($siteTitleShort,$page3);
 include($gage_page);
 
 
-
 $limit = $total_gage_page3;
 $vGage=$aGageP3;
-
-
 
 // Assurons-nous qu'au premier chargement de la page, aucun résultat n'apparaisse
 if (isset($_POST['resultNb'])){// Si le bouton "des" est actionné

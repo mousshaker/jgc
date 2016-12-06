@@ -1,0 +1,44 @@
+<font color="red">[ 08 08 2016 - 09:48:27 - Ligne(s) effacée(s) par </font><font color="#fff">127.0.0.1 </font><font color='red'>]</font>
+06 08 2016 - 23:37:42 - Log NAME - [Ip 127.0.0.1] <font color="red">EFFACE </font> le compteur ! Oxy avait <font color="#fff"><b>22</b></font> et Bulle avait <font color="#fff"><b>3</b></font>
+06 08 2016 - 23:39:44 - Log NAME - [Ip 127.0.0.1] <font color="red">EFFACE </font> le compteur ! Oxy avait <font color="#fff"><b>22</b></font> et Bulle avait <font color="#fff"><b>3</b></font>
+<font color="red">[ 08 08 2016 - 18:19:45 - Ligne(s) effacée(s) par </font><font color="#fff">127.0.0.1 </font><font color='red'>]</font>
+08 08 2016 - 10:58:14 - Log NAME - [Ip 127.0.0.1] <font color="red">REINITIALISE </font> le compteur ! Tytyty avait <font color="#fff"><b>3</b></font> et ghghgh avait <font color="#fff"><b>23</b></font>
+08 08 2016 - 11:32:03 - Log NAME - [Ip 127.0.0.1] <font color="red">REINITIALISE </font> le compteur ! Oxymore avait <font color="#fff"><b>15</b></font> et Oxymore avait <font color="#fff"><b>15</b></font>
+08 08 2016 - 11:33:07 - Log COUNT - [Ip 127.0.0.1] <font color="yellow">ajoute </font>: 1 gage(s) au compteur de Yoalad <font color="grey">{parceque}</font> 
+08 08 2016 - 11:33:33 - Log NAME - [Ip 127.0.0.1] <font color="red">REINITIALISE </font> le compteur ! Oxymore avait <font color="#fff"><b>15</b></font> et Yoalad avait <font color="#fff"><b>4</b></font>
+08 08 2016 - 11:38:04 - Log NAME - [Ip 127.0.0.1] <font color="red">REINITIALISE </font> le compteur ! Oxymore avait <font color="#fff"><b>15</b></font> et Yoalad avait <font color="#fff"><b>4</b></font>
+08 08 2016 - 18:10:48 - Log NAME - [Ip 127.0.0.1] <font color="red">REINITIALISE </font> le compteur ! Oxymore avait <font color="#fff"><b>15</b></font> et Yoalad avait <font color="#fff"><b>4</b></font>
+<font color="red">[ 11 08 2016 - 16:10:59 - Ligne(s) effacée(s) par </font><font color="#fff">127.0.0.1 </font><font color='red'>]</font>
+08 08 2016 - 18:19:30 - Log sensuel - [Ip 127.0.0.1] obtient : 1
+09 08 2016 - 13:51:31 - Log hot (online) - [Ip 127.0.0.1] obtient : 2
+09 08 2016 - 13:51:33 - Log hot (online) - [Ip 127.0.0.1] obtient : 4
+09 08 2016 - 13:51:34 - Log hot (online) - [Ip 127.0.0.1] obtient : 2
+09 08 2016 - 13:51:36 - Log hot (online) - [Ip 127.0.0.1] obtient : 1
+09 08 2016 - 13:51:38 - Log hot (online) - [Ip 127.0.0.1] obtient : 1
+09 08 2016 - 13:51:39 - Log hot (online) - [Ip 127.0.0.1] obtient : 3
+09 08 2016 - 13:51:45 - Log hot (online) - [Ip 127.0.0.1] obtient : 3
+09 08 2016 - 13:51:46 - Log hot (online) - [Ip 127.0.0.1] obtient : 1
+10 08 2016 - 10:22:19 - Log sensuel - [Ip 127.0.0.1] obtient : 5
+10 08 2016 - 10:54:01 - Log NAME - [Ip 127.0.0.1] <font color="#70c3ed">change le nb de lettres de la matrice </font>: 5 en 6 
+
+11 08 2016 - 10:54:00 - Log matrice - [Ip 127.0.0.1] obtient : C-2
+11 08 2016 - 10:54:05 - Log matrice - [Ip 127.0.0.1] obtient : B-2
+11 08 2016 - 12:50:06 - Log coquin - [Ip 127.0.0.1] obtient : 15
+11 08 2016 - 12:56:02 - Log matrice - [Ip 127.0.0.1] obtient : C-3
+11 08 2016 - 16:04:59 - Log supplice - [Ip 127.0.0.1] obtient : B-5
+<font color="red">[ 11 08 2016 - 16:41:23 - Ligne(s) effacée(s) par </font><font color="#fff">127.0.0.1 </font><font color='red'>]</font>
+11 08 2016 - 16:06:51 - Log matrice - [Ip 127.0.0.1] obtient : E-7
+11 08 2016 - 16:10:38 - Log COUNT - [Ip 127.0.0.1] <font color="yellow">ajoute </font>: 5 gage(s) au compteur de Oxymore <font color="grey">{4 thé en 3 heure nanméo}</font> 
+11 08 2016 - 16:28:55 - Log NAME - [Ip 127.0.0.1] <font color="red">REINITIALISE </font> le compteur ! Oxymore avait <font color="#fff"><b>20</b></font> et Yoalad avait <font color="#fff"><b>4</b></font>
+11 08 2016 - 16:30:25 - [Ip 127.0.0.1] utilise un compteur enregistré
+11 08 2016 - 16:32:05 - Log NAME - [Ip 127.0.0.1] <font color="red">REINITIALISE </font> le compteur ! Oxymore avait <font color="#fff"><b>20</b></font> et Yoalad avait <font color="#fff"><b>4</b></font>
+11 08 2016 - 16:35:59 - Log COUNT - [Ip 127.0.0.1] UTILISE un compteur enregistré
+11 08 2016 - 16:38:20 - Log COUNT - [Ip 127.0.0.1] <font color="red">REINITIALISE </font> le compteur ! Oxymore avait <font color="#fff"><b>20</b></font> et Yoalad avait <font color="#fff"><b>4</b></font>
+11 08 2016 - 16:38:35 - Log COUNT - [Ip 127.0.0.1] UTILISE le compteur enregistré deOxymore et Yoalad
+11 08 2016 - 16:39:44 - Log COUNT - [Ip 127.0.0.1] <font color="red">REINITIALISE </font> le compteur ! Oxymore avait <font color="#fff"><b>20</b></font> et Yoalad avait <font color="#fff"><b>4</b></font>
+11 08 2016 - 16:39:51 - Log COUNT - [Ip 127.0.0.1] <font color ="#fff">UTILISE</font>le compteur enregistré de Oxymore et Yoalad
+
+
+
+
+
