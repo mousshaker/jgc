@@ -219,6 +219,8 @@ $aGageSampleMan = array(
 34=>"https://68.media.tumblr.com/be5c5120430dc33e12593ba8351509e0/tumblr_o5r0kgztK51smqc9wo1_500.gif",
 35=>"https://68.media.tumblr.com/f59576af6c477d2be01065899f0dae6a/tumblr_mt4z9vXDoI1rfvpq9o3_500.jpg",
 36=>"https://68.media.tumblr.com/247ef3286a095041960ad19b8e3bb355/tumblr_ohqpiofFpR1u7izcgo1_500.gif",
+37=>"https://68.media.tumblr.com/8b21d90978dfc777970163c37b784543/tumblr_nxta0dYaXB1uxf245o2_500.gif",
+38=>"https://68.media.tumblr.com/7d4638d26452211b1bcf73b0eb7a1664/tumblr_nxta0dYaXB1uxf245o5_400.gif",
 
 
 );

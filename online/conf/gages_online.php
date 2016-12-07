@@ -86,6 +86,8 @@ $aGageSampleGirl = array(
 11=>"https://68.media.tumblr.com/07f95b3bcf9fd5467bc3e89568f4f0dc/tumblr_nhvp8qONtQ1t8jafbo1_500.jpg",
 12=>"https://68.media.tumblr.com/b5b9b9abd6cb4d86712a04a61fa67e95/tumblr_n31sjjtozU1r21xm5o1_500.jpg",
 13=>"https://68.media.tumblr.com/e3ed6e069cf91760af48bc0c7b77bbc0/tumblr_oh2ap6fNHn1turwhto1_540.jpg",
+14=>"https://68.media.tumblr.com/0bb8ad38b99e528a66d2a09e3fbf948a/tumblr_ohl8s2n37z1r0tutqo1_1280.jpg",
+14=>"https://68.media.tumblr.com/b2c049fb8388a95e0d5ef8c23f5eea2c/tumblr_oh05c4aAxb1v0j6qto1_1280.jpg",
 
 );
 $total_gage_SampleGirl = count($aGageSampleGirl);
