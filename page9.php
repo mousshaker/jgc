@@ -143,22 +143,20 @@ $count2 = wLogRead($dataPath,'man');
 		</br> Pour rappel, vous pouvez afficher la liste des gages <?php echo $page8;?>s possibles :
 		<a class="show" href="#hide_contenu"><?php echo $showHide;?></a></br></br>
 		<div id="hide_contenu">
-			<div class="tableaux">
-				<table>
-				<?php
-				#Tableau Femme
-				for($i=1;$i<=50;$i++){
-					echo '<tr>';
-					echo '<th>F '.$i.'</th>';
-					echo '<td class="tdShow"><img src="'.$aGageSampleGirl[$i].'" class="illuGage"></td>';
-					echo '<td class="tdShow"><img src="'.$aGageSampleMan[$i].'" class="illuGage"></td>';
-					echo '<th>M '.$i.'</th>';
-					echo '</tr>';
-				}
-				?>
-				</table>
-			</div>
-			
+			<table>
+			<?php
+			#Tableau Femme
+			for($i=1;$i<=50;$i++){
+				echo '<tr>';
+				echo '<th>F '.$i.'</th>';
+				echo '<td class="tdShow"><img src="'.$aGageSampleGirl[$i].'" class="illuGage"></td>';
+				echo '<td class="tdShow"><img src="'.$aGageSampleMan[$i].'" class="illuGage"></td>';
+				echo '<th>M '.$i.'</th>';
+				echo '</tr>';
+			}
+			?>
+			</table>
+			<a class="show" href="#hide_contenu">Retour haut</a>
 		</div>
 	</div>
 </div>

@@ -498,6 +498,22 @@ form{
 	font-size: 0.80em;
 }
 
+.show{
+    color: #fff;
+    background: #070735;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 22px;
+    height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
 
 .sensuel{
 	color: #ee9dd6;
