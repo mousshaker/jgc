@@ -46,11 +46,7 @@
 	    border-bottom: none;
 	}
 	 
-	#primary_nav li a:hover,
-	#primary_nav li a:focus {
-	    background: #242456;
-	    text-decoration: none;
-	}
+	
 	#primary_nav:target{
 		display: block;
 	}
@@ -72,10 +68,12 @@
 	    border-radius: 2px;
 	}
 	 
-	a.to_nav:hover,
-	a.to_nav:focus {
-	    color: #1c1c1c;
-	    background: #a2a2cb;
+	
+
+	#primary_nav li a:hover,
+	#primary_nav li a:focus {
+	    background: #242456;
+	    text-decoration: none;
 	}
 
 }
@@ -314,7 +312,7 @@ a:hover, a:focus {
 	text-decoration:none;
 	color:#fff;
 	/*background-color: #240c10;*/
-	padding: 10px;
+	/*padding: 10px;*/
 
 }
 

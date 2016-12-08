@@ -188,7 +188,7 @@ if (isset($_POST['read'])){// Si le bouton "read" est actionné
 			<input type="submit" class="<?php echo $page5; ?>BG lanceur darkButton" name="chooseLetter" value="A-<?php echo $alphabet[$i-1]; ?>">
 			<input type="submit" class="<?php echo $page5; ?>BG lanceur darkButton" name="chooseNum" value="1-<?php echo $j-1; ?>">
 	</form>
-	<form method="post">
+	<form method="post" action="#result">
 			<input type="submit" name="read" value="<?php echo $seeLastResult; ?>" class="lanceur darkButton">
 	</form>
 
