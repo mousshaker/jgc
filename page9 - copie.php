@@ -87,12 +87,12 @@ $count2 = wLogRead($dataPath,'man');
 	<table>
 		<tr>
 			<td class="tdNeutral">
-				<?php if($lastPlayer==1){echo'<font class="colorBlanc tdShow">ELLE</font>';}
+				<?php if($lastPlayer==1){echo'<font class="colorBlanc">ELLE</font>';}
 				else{ echo 'ELLE';}
 				?>
 			</td>
 			<td class="tdNeutral">
-				<?php if($lastPlayer==2){echo'<font class="colorBlanc tdShow">LUI</font>';}
+				<?php if($lastPlayer==2){echo'<font class="colorBlanc">LUI</font>';}
 				else{ echo 'LUI';}
 				?>
 			</td>
@@ -138,28 +138,31 @@ $count2 = wLogRead($dataPath,'man');
 
 
 	<div style="overflow-x:auto;">
-		
-		</br>______________________________________
-		</br> Pour rappel, vous pouvez afficher la liste des gages <?php echo $page8;?>s possibles :
-		<a class="show" href="#hide_contenu"><?php echo $showHide;?></a></br></br>
-		<div id="hide_contenu">
-			<div class="tableaux">
-				<table>
-				<?php
-				#Tableau Femme
-				for($i=1;$i<=50;$i++){
-					echo '<tr>';
-					echo '<th>F '.$i.'</th>';
-					echo '<td class="tdShow"><img src="'.$aGageSampleGirl[$i].'" class="illuGage"></td>';
-					echo '<td class="tdShow"><img src="'.$aGageSampleMan[$i].'" class="illuGage"></td>';
-					echo '<th>M '.$i.'</th>';
-					echo '</tr>';
-				}
-				?>
-				</table>
-			</div>
-			
-		</div>
+		<?php
+		echo '</br>______________________________________
+		</br> Pour rappel, vous pouvez afficher la liste des gages '.$page8.'s possibles : <button class="show">'.$showHide.'</button></br></br><p>';
+		#Tableau Femme
+		echo '<table><tr>';
+		for($i=1;$i<=sizeof($aGageSampleGirl);$i++){
+			echo '<td>F '.$i.'</td>';
+		}
+		echo '</tr><tr>';
+		for($i=1;$i<=sizeof($aGageSampleGirl);$i++){
+			echo '<td><img src="'.$aGageSampleGirl[$i].'" class="illuGage"></td>';
+		}
+		echo '</tr></table>';
+
+		#Tableau Homme
+		echo '<table><tr>';
+		for($i=1;$i<=sizeof($aGageSampleMan);$i++){
+			echo '<td>M '.$i.'</td>';
+		}
+		echo '</tr><tr>';
+		for($i=1;$i<=sizeof($aGageSampleMan);$i++){
+			echo '<td><img src="'.$aGageSampleMan[$i].'" class="illuGage"></td>';
+		}
+		echo '</tr></table>';
+		?>
 	</div>
 </div>
 

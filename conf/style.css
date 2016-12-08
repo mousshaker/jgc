@@ -268,6 +268,13 @@ ol, ul {
 	font-style: italic;
 }
 
+.tableaux{
+  display:inline-block;
+  vertical-align:top;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 body {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 0.8em;
@@ -363,11 +370,10 @@ form{
    	margin-top: 10px;
 }
 
-.tdShow{
-	border-style: solid;
+.tdShow{	
 	border-width: 1px;
-	color: #5a87a0;
 	padding: 5px;
+	background:rgba(36,36,86,0.70);
 }
 .tdNeutral{
 	padding: 10px;
@@ -434,8 +440,8 @@ form{
 }
 
 .illuGage{
-	max-width: 200px;
-	max-height: 120px;
+	width: 150px;
+	/*max-height: 150px;*/
 }
 
 
@@ -553,4 +559,11 @@ form{
 	max-width: 768px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#hide_contenu{
+	display: none;
+}
+#hide_contenu:target{
+	display: block;
 }
