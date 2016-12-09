@@ -22,3 +22,6 @@ Copiez tout simplement tel quel l'ensemble des fichiers du dépôt dans votre ra
 - 1 jeu de 21 (lancé de dés pour obtenir 21) afin d'obtenir des gages
 - 1 compteur de gages (pour 2 joueurs)
 - des logs
+
+<h2>Notes / infos </h2>
+Attention : l'image de background est ici à titre illustratif, mais aucun droit d'utilisation n'a été cédé par l'auteur de la photo. Pensez à remplacer l'exemple par une photo dont vous avez les droits nécessaires.

@@ -66,6 +66,7 @@ $aGageSampleMan = array(
 13=>"http://68.media.tumblr.com/572bdc2b8bbaecf72c3560fcf3bc5fc2/tumblr_ofu4h5N9wL1unrs9bo1_1280.jpg",
 14=>"https://68.media.tumblr.com/8757d92dc776ce2b88094b9e5ab20634/tumblr_mttihonNTq1sq8hxqo1_500.jpg",
 15=>"https://68.media.tumblr.com/43687b38d68cbd469a583afaa72c0672/tumblr_ogs4grRlek1t5v89po1_1280.jpg",
+16=>"https://68.media.tumblr.com/bffd4bd8ada9fa590b64a8d4d0bfded8/tumblr_o7cx6rpLQ11vufeyuo1_1280.jpg",
 
 );
 $total_gage_SampleMan = count($aGageSampleMan);
@@ -90,6 +91,8 @@ $aGageSampleGirl = array(
 15=>"https://68.media.tumblr.com/b2c049fb8388a95e0d5ef8c23f5eea2c/tumblr_oh05c4aAxb1v0j6qto1_1280.jpg",
 16=>"https://68.media.tumblr.com/a11d6e95df906d3f85665c6c352393af/tumblr_n2d712VGOq1qb139no1_500.gif",
 17=>"https://68.media.tumblr.com/79967ef553372fb8e11d4ff408fda709/tumblr_ogjbd1KzPZ1qg4fzbo1_1280.jpg",
+18=>"https://68.media.tumblr.com/39ad79c09b512f25feadf37f6e7b6303/tumblr_o9nw2xXtmo1smmu1uo1_500.jpg",
+20=>"https://68.media.tumblr.com/31414c6b4ba54a31b41c7ae2ae29a84b/tumblr_oe1gmc4l9c1tduf00o2_500.gif",
 
 );
 $total_gage_SampleGirl = count($aGageSampleGirl);

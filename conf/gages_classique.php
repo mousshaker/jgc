@@ -177,7 +177,13 @@ $aGageSampleGirl = array(
 41=>"https://68.media.tumblr.com/0b1809398c4c8e79676019ed9c4433d1/tumblr_oa4octIMzl1qj0r4zo1_400.gif",
 42=>"https://68.media.tumblr.com/38c763cac6b1fe8a1f1685cefbe989c2/tumblr_ohbzceEWij1u0eixio1_400.gif",
 43=>"https://68.media.tumblr.com/f233d9779d9cc7a381677e57e3438e5c/tumblr_oh8lozHqF71tefbxho1_1280.jpg",
-
+44=>"https://68.media.tumblr.com/19785a530619fe888216426df4c28bae/tumblr_ob2skobC5z1ulctv0o1_500.gif",
+45=>"https://68.media.tumblr.com/3bfbe1609b64fc44085003b5a710cab5/tumblr_oajfo1nCTS1so2d6xo1_500.gif",
+46=>"https://68.media.tumblr.com/7ce71709056b7caebfbab56bd9992eb3/tumblr_o6dcxziL5h1u0eixio1_500.jpg",
+47=>"https://68.media.tumblr.com/23a5f3f7046acecdc35f5f540192fa98/tumblr_mzqxgkDH5c1qd5ic3o1_500.jpg",
+48=>"https://68.media.tumblr.com/b8f310929aa02d1943ed7538fd690509/tumblr_nnhr52Ac3w1uq7c6mo1_500.jpg",
+49=>"https://68.media.tumblr.com/11c89cff169b770cce4cb973ef9a86e8/tumblr_nru53ikNtv1sg85qqo1_500.jpg",
+50=>"https://68.media.tumblr.com/08954d739b5a2cc5c3b985d3b64764d3/tumblr_o6peelDKTC1u6mvpzo1_1280.jpg",
 );
 $total_gage_SampleGirl = count($aGageSampleGirl);
 
@@ -226,6 +232,13 @@ $aGageSampleMan = array(
 41=>"https://68.media.tumblr.com/96311bcc7fb7042a84fb4236a3509760/tumblr_ob2tngDVIs1rrzrnto1_400.gif",
 42=>"https://68.media.tumblr.com/01c82b2d7a04170248d75eb88f9f5f15/tumblr_ohueqh9vNj1sf68sto6_500.gif",
 43=>"https://68.media.tumblr.com/fff4be3d0758c012529e366a0f589a88/tumblr_o5n0vqMwye1r1dohfo1_400.gif",
+44=>"https://68.media.tumblr.com/1ba3ccc5addec7663f3de5638aeb7431/tumblr_ohrknqBIeJ1tduf00o1_400.gif",
+45=>"https://68.media.tumblr.com/ba78d8c277ced1988439980fdc42116c/tumblr_nvq6ouQOpx1sfmznoo1_400.gif",
+46=>"https://68.media.tumblr.com/103838f844a83fde544407ff6fa8887f/tumblr_o14etmDQN41uhbkwyo1_500.gif",
+47=>"https://68.media.tumblr.com/8f9d3f8b4d200efb2f9d7a3d92d66a1c/tumblr_ogga7eVU9h1qhyyywo1_500.gif",
+48=>"https://68.media.tumblr.com/45cf639163ab8919ee3fb3f18b482af0/tumblr_og8ufzArZH1tduf00o2_400.gif",
+49=>"https://68.media.tumblr.com/cbf865ca34787b92c47675612eb5d9b4/tumblr_og8ufzArZH1tduf00o1_400.gif",
+50=>"https://68.media.tumblr.com/dda10d8c7db3c535b537910b2ba8f8ee/tumblr_ohq5itBFUA1v5cpozo1_400.gif"
 
 
 );

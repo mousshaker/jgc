@@ -21,35 +21,27 @@ Exemples<br>
 <div class="wrapper" style="overflow-x:auto;">
 	<div class="contenu">
 		<div style="overflow-x:auto;">
-			<div class="blocText">
-				En cliquant sur AFFICHER / MASQUER, vous trouverez des exemples de clichés pouvant vous inspirer pour vos réalisations de gages "online".
-			</div>
+		
+		</br>______________________________________
+		</br> Pour rappel, vous pouvez afficher la liste des gages <?php echo $page8;?>s possibles :
+		<a class="show" href="#hide_contenu"><?php echo $showHide;?></a></br></br>
+		<div id="hide_contenu">
+			<table>
 			<?php
-			echo '</br>______________________________________
-			</br> Pour rappel, vous pouvez afficher la liste des gages '.$page8.'s possibles : <button class="show">'.$showHide.'</button></br></br><p>';
 			#Tableau Femme
-			echo '<table><tr>';
-			for($i=1;$i<=sizeof($aGageSampleGirl);$i++){
-				echo '<td>F '.$i.'</td>';
+			for($i=1;$i<=25;$i++){
+				echo '<tr>';
+				echo '<th>F '.$i.'</th>';
+				echo '<td class="tdShow"><img src="'.$aGageSampleGirl[$i].'" class="illuGage"></td>';
+				echo '<td class="tdShow"><img src="'.$aGageSampleMan[$i].'" class="illuGage"></td>';
+				echo '<th>M '.$i.'</th>';
+				echo '</tr>';
 			}
-			echo '</tr><tr>';
-			for($i=1;$i<=sizeof($aGageSampleGirl);$i++){
-				echo '<td><img src="'.$aGageSampleGirl[$i].'" class="illuGage"></td>';
-			}
-			echo '</tr></table>';
-
-			#Tableau Homme
-			echo '<table><tr>';
-			for($i=1;$i<=sizeof($aGageSampleMan);$i++){
-				echo '<td>M '.$i.'</td>';
-			}
-			echo '</tr><tr>';
-			for($i=1;$i<=sizeof($aGageSampleMan);$i++){
-				echo '<td><img src="'.$aGageSampleMan[$i].'" class="illuGage"></td>';
-			}
-			echo '</tr></table>';
 			?>
+			</table>
+			<a class="show" href="#hide_contenu">Retour haut</a>
 		</div>
+	</div>
 	</div>
 </div>
 
