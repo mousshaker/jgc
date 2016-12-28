@@ -13,6 +13,7 @@ $aGageP1 = array(
 5=>"Envoyer une photo sensuellement provocatrice du sexe (dissimulé par une main, un tissu, ...)",
 6=>"Envoyer une photo sensuellement provocatrice de votre choix (chinée sur le Net autorisée)",
 7=>"Envoyer une photo sensuellement provocatrice de votre choix, mais de VOUS (où vous êtes le modèle)",
+8=>"Faire un gage au choix de l'autre joueur, parmi les exemples illustrés online"
 
 );
 
@@ -31,6 +32,7 @@ $aGageP2 = array(
 6=>"Envoyer une photo coquine et provocatrice (par votre regard, votre expression de visage, de corps,...) de VOUS",
 7=>"Envoyer une photo de votre sexe non dissimulé (sexe en main (H) / doigt dans sexe (F))",
 8=>"Envoyer une vidéo de vous en train de vous mordiller/lécher les lèvres (5-10 sec)",
+9=>"Faire un gage au choix de l'autre joueur, parmi les exemples illustrés online"
 
 );
 
@@ -44,6 +46,7 @@ $aGageP3 = array(
 2=>"Se caresser le torse/poitrine en cam > 15 sec (vidéo envoyée acceptée)",
 3=>"Envoyer un enregistrement audio cru/provocant (J'ai 1 envie folle de ta queue/chatte, ...)",
 4=>"Envoyer un enregistrement audio d'un râle de plaisir (simulant l'orgasme)",
+5=>"Faire un gage au choix de l'autre joueur, parmi les exemples illustrés online"
 );
 
 $total_gage_page3 = count($aGageP3);
