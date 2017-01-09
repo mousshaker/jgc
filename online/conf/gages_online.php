@@ -13,7 +13,14 @@ $aGageP1 = array(
 5=>"Envoyer une photo sensuellement provocatrice du sexe (dissimulé par une main, un tissu, ...)",
 6=>"Envoyer une photo sensuellement provocatrice de votre choix (chinée sur le Net autorisée)",
 7=>"Envoyer une photo sensuellement provocatrice de votre choix, mais de VOUS (où vous êtes le modèle)",
-8=>"Faire un gage au choix de l'autre joueur, parmi les exemples illustrés online"
+8=>"A la manière de action/vérité, répondre à une question de l'autre joueur, en toute franchise",
+9=>"Avouer à l'autre 1 envie/désir non réalisé, mais que vous espérez bien mettre en pratique un jour",
+10=>"Avouer à l'autre 1 envie/désir déjà réalisé, et qu'il vous délecterait de mettre en pratique avec elle/lui",
+11=>"Avouer à l'autre un de vos péché-mignons que vous vous délecter d'offrir à l'autre",
+12=>"Avouer à l'autre un de vos péché-mignons que vous vous délecter de recevoir de l'autre",
+13=>"Décrire à l'autre une scène/acte coquin(e) que vous imagineriez bien partager avec elle/lui",
+14=>"Décrire à l'autre une scène/acte HOT que vous imagineriez bien partager avec elle/lui",
+15=>"Envoyer une phrase écrite provoquante et crue susceptible d'émousser l'excitation de l'autre"
 
 );
 
@@ -32,7 +39,7 @@ $aGageP2 = array(
 6=>"Envoyer une photo coquine et provocatrice (par votre regard, votre expression de visage, de corps,...) de VOUS",
 7=>"Envoyer une photo de votre sexe non dissimulé (sexe en main (H) / doigt dans sexe (F))",
 8=>"Envoyer une vidéo de vous en train de vous mordiller/lécher les lèvres (5-10 sec)",
-9=>"Faire un gage au choix de l'autre joueur, parmi les exemples illustrés online"
+9=>"Faire un gage de VOTRE choix parmi les exemples illustrés online"
 
 );
 
@@ -46,10 +53,39 @@ $aGageP3 = array(
 2=>"Se caresser le torse/poitrine en cam > 15 sec (vidéo envoyée acceptée)",
 3=>"Envoyer un enregistrement audio cru/provocant (J'ai 1 envie folle de ta queue/chatte, ...)",
 4=>"Envoyer un enregistrement audio d'un râle de plaisir (simulant l'orgasme)",
-5=>"Faire un gage au choix de l'autre joueur, parmi les exemples illustrés online"
+5=>"Faire un gage au choix de l'autre joueur, parmi les exemples illustrés online (onglet violet)",
+6=>"Faire un gage au choix de l'autre joueur, parmi les exemples illustrés online",
 );
 
 $total_gage_page3 = count($aGageP3);
+
+
+/*** page 8 ***/
+### MEDLEY ###
+
+$aGageP8 = array(
+1=> "Envoyer une vidéo de vous en train de vous mordiller/lécher les lèvres (5-10 sec)",
+2=> "Envoyer un enregistrement audio d'une phrase coquine comportant 4 mots au choix de l'autre joueur",
+3=> "Envoyer à l'autre une phrase décrivant une envie coquine du moment",
+4=> "Envoyer un enregistrement audio d'une phrase coquine provocante",
+5=> "Dire à l'autre un gage que vous vous délecteriez de faire avec lui, parmi la liste des 'illustrés classiques' (onglet jaune)",
+6=> "Envoyer une photo coquine et provocatrice (par votre regard, votre expression de visage, de corps,...) de VOUS",
+7=> "Envoyer un enregistrement audio d'un gémissement sensuel (du genre 'hummm')",
+8=>"Envoyer une phrase écrite provoquante et crue susceptible d'émousser l'excitation de l'autre",
+9=>"Avouer à l'autre 1 envie/désir non réalisé, mais que vous espérez bien mettre en pratique un jour",
+10=>"Avouer à l'autre 1 envie/désir déjà réalisé, et qu'il vous délecterait de mettre en pratique avec elle/lui",
+11=>"Avouer à l'autre un de vos péché-mignons que vous vous délecter d'offrir à l'autre",
+12=>"Avouer à l'autre un de vos péché-mignons que vous vous délecter de recevoir de l'autre",
+13=>"Décrire à l'autre une scène/acte coquin(e) que vous imagineriez bien partager avec elle/lui",
+14=>"Décrire à l'autre une scène/acte HOT que vous imagineriez bien partager avec elle/lui",
+15=>"Faire un gage de VOTRE choix parmi les exemples illustrés online (onglet violet)",
+16=> "A la manière de action/vérité, répondre à une question de l'autre joueur, en toute franchise"
+
+
+
+);
+$total_gage_page8 = count($aGageP8);
+
 
 
 

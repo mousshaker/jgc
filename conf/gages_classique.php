@@ -103,7 +103,7 @@ $total_gage_page6 = count($aGageP6);
 
 /*** page 8 ***/
 ### MEDLEY ###
-/*
+
 $aGageP8 = array(
 1=>"Caresser torse/poitrine de l'autre. Torse nu pour H, soutient-gorge pour F (30 sec)",
 2=>"Recevoir une fessée ferme, cul nu",
@@ -124,26 +124,6 @@ $aGageP8 = array(
 17=>"Sucer/lécher le sexe de l'autre alors qu'il/elle guide les mouvements de son sexe (30sec)",
 18=>"Se faire attraper les cheveux/tête fermement et amener la tête jusqu'au sexe de l'autre. Puis embrasser son sexe",
 19=>"Caresser/masturber le sexe de l'autre d'une main en lui serrant la gorge de l'autre main (30sec)",
-*/
-
-$aGageP8 = array(
-1=> "Envoyer une vidéo de vous en train de vous mordiller/lécher les lèvres (5-10 sec)",
-2=> "Envoyer un enregistrement audio d'une phrase coquine comportant 4 mots au choix de l'autre joueur",
-3=> "Envoyer à l'autre une phrase décrivant une envie coquine du moment",
-4=> "Envoyer un enregistrement audio d'une phrase coquine provocante",
-5=> "Dire à l'autre un gage que vous vous délecteriez de faire avec lui, parmi la liste des 'illustrés classiques' (onglet jaune)",
-6=> "Envoyer une photo coquine et provocatrice (par votre regard, votre expression de visage, de corps,...) de VOUS",
-7=> "Envoyer un enregistrement audio d'un gémissement sensuel (du genre 'hummm')",
-8=>"Envoyer une phrase écrite provoquante et crue susceptible d'émousser l'excitation de l'autre",
-9=>"Avouer à l'autre 1 envie/désir non réalisé, mais que vous espérez bien mettre en pratique un jour",
-10=>"Avouer à l'autre 1 envie/désir déjà réalisé, et qu'il vous délecterait de mettre en pratique avec elle/lui",
-11=>"Avouer à l'autre un de vos péché-mignons que vous vous délecter d'offrir à l'autre",
-12=>"Avouer à l'autre un de vos péché-mignons que vous vous délecter de recevoir de l'autre",
-13=>"Décrire à l'autre une scène/acte coquin(e) que vous imagineriez bien partager avec elle/lui",
-14=>"Décrire à l'autre une scène/acte HOT que vous imagineriez bien partager avec elle/lui",
-15=>"envoyez 1 photo de vos yeux en photo",
-16=> "A la manière de action/vérité, répondre à une question de l'autre joueur, en toute franchise"
-
 
 
 );
