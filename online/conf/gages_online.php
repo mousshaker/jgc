@@ -33,7 +33,7 @@ $total_gage_page1 = count($aGageP1);
 $aGageP2 = array(
 1=>"Envoyer une vidéo montrant une partie intime de vous (10 sec)",
 2=>"Envoyer un photo incitatrice/provocatrice d'une partie intime non dissimulée",
-3=>"Envoyer un enregistrement audio d'une phrase coquine provocante",
+3=>"Envoyer un enregistrement audio d'une phrase coquine comportant 4 mots au choix de l'autre joueur",
 4=>"Envoyer un enregistrement audio d'un gémissement sensuel (du genre 'hummm')",
 5=>"Envoyer une photo coquine et provocatrice (d'un acte sexuel, d'une position,...) de votre choix (chinée sur le Net autorisée)",
 6=>"Envoyer une photo coquine et provocatrice (par votre regard, votre expression de visage, de corps,...) de VOUS",
@@ -64,20 +64,20 @@ $total_gage_page3 = count($aGageP3);
 ### MEDLEY ###
 
 $aGageP8 = array(
-1=> "Envoyer une vidéo de vous en train de vous mordiller/lécher les lèvres (5-10 sec)",
-2=> "Envoyer un enregistrement audio d'une phrase coquine comportant 4 mots au choix de l'autre joueur",
-3=> "Envoyer à l'autre une phrase décrivant une envie coquine du moment",
-4=> "Envoyer un enregistrement audio d'une phrase coquine provocante",
-5=> "Dire à l'autre un gage que vous vous délecteriez de faire avec lui, parmi la liste des 'illustrés classiques' (onglet jaune)",
-6=> "Envoyer une photo coquine et provocatrice (par votre regard, votre expression de visage, de corps,...) de VOUS",
-7=> "Envoyer un enregistrement audio d'un gémissement sensuel (du genre 'hummm')",
-8=>"Envoyer une phrase écrite provoquante et crue susceptible d'émousser l'excitation de l'autre",
-9=>"Avouer à l'autre 1 envie/désir non réalisé, mais que vous espérez bien mettre en pratique un jour",
-10=>"Avouer à l'autre 1 envie/désir déjà réalisé, et qu'il vous délecterait de mettre en pratique avec elle/lui",
-11=>"Avouer à l'autre un de vos péché-mignons que vous vous délecter d'offrir à l'autre",
-12=>"Avouer à l'autre un de vos péché-mignons que vous vous délecter de recevoir de l'autre",
-13=>"Décrire à l'autre une scène/acte coquin(e) que vous imagineriez bien partager avec elle/lui",
-14=>"Décrire à l'autre une scène/acte HOT que vous imagineriez bien partager avec elle/lui",
+1=> "",
+2=> "",
+3=> "",
+4=> "",
+5=> "",
+6=> "",
+7=> "",
+8=>"",
+9=>"",
+10=>"",
+11=>"",
+12=>"Avouer à l'autre 1 envie/désir NON réalisé, mais que vous espérez bien mettre en pratique un jour",
+13=>"Avouer à l'autre 1 envie/désir DEJA réalisé, et qu'il vous délecterait de mettre en pratique avec elle/lui",
+14=>"Décrire à l'autre une scène/acte coquin(e) que vous imagineriez bien partager avec elle/lui",
 15=>"Faire un gage de VOTRE choix parmi les exemples illustrés online (onglet violet)",
 16=> "A la manière de action/vérité, répondre à une question de l'autre joueur, en toute franchise"
 
@@ -131,7 +131,7 @@ $aGageSampleGirl = array(
 16=>"https://68.media.tumblr.com/a11d6e95df906d3f85665c6c352393af/tumblr_n2d712VGOq1qb139no1_500.gif",
 17=>"https://68.media.tumblr.com/79967ef553372fb8e11d4ff408fda709/tumblr_ogjbd1KzPZ1qg4fzbo1_1280.jpg",
 18=>"https://68.media.tumblr.com/39ad79c09b512f25feadf37f6e7b6303/tumblr_o9nw2xXtmo1smmu1uo1_500.jpg",
-20=>"https://68.media.tumblr.com/31414c6b4ba54a31b41c7ae2ae29a84b/tumblr_oe1gmc4l9c1tduf00o2_500.gif",
+19=>"https://68.media.tumblr.com/31414c6b4ba54a31b41c7ae2ae29a84b/tumblr_oe1gmc4l9c1tduf00o2_500.gif",
 
 );
 $total_gage_SampleGirl = count($aGageSampleGirl);

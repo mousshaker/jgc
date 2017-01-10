@@ -22,7 +22,7 @@
 
 <div class="wrapper" style="overflow-x:auto;">	
 	<header>
-	    <a class="to_nav" href="#primary_nav">Versions</a>
+	    <a class="to_nav" href="#primary_nav">Listes</a>
 	</header>
 </div>
 <?php

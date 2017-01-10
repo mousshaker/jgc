@@ -29,7 +29,7 @@ Exemples<br>
 			<table>
 			<?php
 			#Tableau Femme
-			for($i=1;$i<=25;$i++){
+			for($i=1;$i<=20;$i++){
 				echo '<tr>';
 				echo '<th>F '.$i.'</th>';
 				echo '<td class="tdShow"><img src="'.$aGageSampleGirl[$i].'" class="illuGage"></td>';

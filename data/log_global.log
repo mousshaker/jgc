@@ -90,3 +90,7 @@
 08 12 2016 - 15:03:48 - Log girl - [Ip 127.0.0.1] obtient : F 2
 08 12 2016 - 15:03:52 - Log man - [Ip 127.0.0.1] obtient : M 3
 12 12 2016 - 13:35:41 - Log NAME - [Ip 127.0.0.1] <font color="#70c3ed">change le nb de lettres de la matrice </font>: 6 en 26 
+10 01 2017 - 09:31:52 - Log girl - [Ip 127.0.0.1] obtient : F 19
+10 01 2017 - 09:32:56 - Log man - [Ip 127.0.0.1] obtient : M 5
+10 01 2017 - 09:32:58 - Log girl - [Ip 127.0.0.1] obtient : F 8
+10 01 2017 - 10:00:57 - Log onlineman - [Ip 127.0.0.1] obtient : M 3
