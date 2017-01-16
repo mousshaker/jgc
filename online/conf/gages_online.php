@@ -20,7 +20,7 @@ $aGageP1 = array(
 12=>"Avouer à l'autre un de vos péché-mignons que vous vous délecter de recevoir de l'autre",
 13=>"Décrire à l'autre une scène/acte coquin(e) que vous imagineriez bien partager avec elle/lui",
 14=>"Décrire à l'autre une scène/acte HOT que vous imagineriez bien partager avec elle/lui",
-15=>"Envoyer une phrase écrite provoquante et crue susceptible d'émousser l'excitation de l'autre"
+15=>"Envoyer une phrase écrite provoquante et 'hot' susceptible d'émousser l'excitation de l'autre"
 
 );
 
@@ -39,7 +39,9 @@ $aGageP2 = array(
 6=>"Envoyer une photo coquine et provocatrice (par votre regard, votre expression de visage, de corps,...) de VOUS",
 7=>"Envoyer une photo de votre sexe non dissimulé (sexe en main (H) / doigt dans sexe (F))",
 8=>"Envoyer une vidéo de vous en train de vous mordiller/lécher les lèvres (5-10 sec)",
-9=>"Faire un gage de VOTRE choix parmi les exemples illustrés online"
+9=>"Faire un gage de VOTRE choix parmi les exemples illustrés online (onglet violet)",
+10=>"Faire un strip tease en cam (jusqu'à être en sous-vêtement). Vidéo envoyée acceptée",
+11=>"Faire une photo en lingerie sexy (porte-jartelle, bustier, dentelle,...). Homme : boxer/calçon moulant en jouant sur l'angle et/ou la mise en scène"
 
 );
 
@@ -53,8 +55,11 @@ $aGageP3 = array(
 2=>"Se caresser le torse/poitrine en cam > 15 sec (vidéo envoyée acceptée)",
 3=>"Envoyer un enregistrement audio cru/provocant (J'ai 1 envie folle de ta queue/chatte, ...)",
 4=>"Envoyer un enregistrement audio d'un râle de plaisir (simulant l'orgasme)",
-5=>"Faire un gage au choix de l'autre joueur, parmi les exemples illustrés online (onglet violet)",
-6=>"Faire un gage au choix de l'autre joueur, parmi les exemples illustrés online",
+5=>"Faire un gage de VOTRE choix parmi les exemples illustrés online (onglet violet)",
+6=>"Faire un gage au choix de l'autre joueur, parmi les exemples illustrés online (onglet violet)",
+7=>"Exécuter en cam une requête au choix de l'autre",
+8=>"Exécuter en photo une requête au choix de l'autre",
+9=>"Se provoquer un orgasme en cam sous le regard de l'autre (qui peut, à son choix, participer aussi)",
 );
 
 $total_gage_page3 = count($aGageP3);
@@ -64,24 +69,17 @@ $total_gage_page3 = count($aGageP3);
 ### MEDLEY ###
 
 $aGageP8 = array(
-1=> "",
-2=> "",
-3=> "",
-4=> "",
-5=> "",
-6=> "",
-7=> "",
-8=>"",
-9=>"",
-10=>"",
-11=>"",
-12=>"Avouer à l'autre 1 envie/désir NON réalisé, mais que vous espérez bien mettre en pratique un jour",
-13=>"Avouer à l'autre 1 envie/désir DEJA réalisé, et qu'il vous délecterait de mettre en pratique avec elle/lui",
-14=>"Décrire à l'autre une scène/acte coquin(e) que vous imagineriez bien partager avec elle/lui",
-15=>"Faire un gage de VOTRE choix parmi les exemples illustrés online (onglet violet)",
-16=> "A la manière de action/vérité, répondre à une question de l'autre joueur, en toute franchise"
-
-
+1=> "Prendre une photo coquine de vous dans un lieu extérieur (autre que chez soi)",
+2=> "Decrire une scène coquine (hot ou sauvage ou sensuel peu importe) que vous aimeriez faire avec elle/lui dans un lieu public",
+3=> "Envoyer un enregistrement audio d'une envie coquine alors que vous n'êtes pas seul(e)",
+4=> "Avouer à l'autre 1 envie/désir NON réalisé, mais que vous espérez bien mettre en pratique un jour",
+5=> "Avouer à l'autre 1 envie/désir DEJA réalisé en extérieur, et qu'il vous délecterait de mettre en pratique avec elle/lui",
+6=> "Décrire à l'autre une scène/acte coquin(e) que vous imagineriez bien partager avec elle/lui",
+7=> "Faire un gage de VOTRE choix parmi les exemples illustrés online (onglet violet)",
+8=> "A la manière de action/vérité, répondre à une question de l'autre joueur, en toute franchise",
+9=> "Prendre une photo laissant apparaître clairement un sein/pectoraux, tout en étant dans un lieu publique (on doit voir tout ou partie, au moins, du mamelon",
+10=>"Prendre une photo laissant apparaître votre sexe, tout en étant dans un lieu publique (tout ou partie de toison acceptée, si il y a)",
+11=>"Prendre une photo/vidéo de vos lèvres et/ou regard sensuel (dans votre contexte actuel, c'est à dire au bureau, dans la rue, etc)"
 
 );
 $total_gage_page8 = count($aGageP8);
@@ -131,7 +129,6 @@ $aGageSampleGirl = array(
 16=>"https://68.media.tumblr.com/a11d6e95df906d3f85665c6c352393af/tumblr_n2d712VGOq1qb139no1_500.gif",
 17=>"https://68.media.tumblr.com/79967ef553372fb8e11d4ff408fda709/tumblr_ogjbd1KzPZ1qg4fzbo1_1280.jpg",
 18=>"https://68.media.tumblr.com/39ad79c09b512f25feadf37f6e7b6303/tumblr_o9nw2xXtmo1smmu1uo1_500.jpg",
-19=>"https://68.media.tumblr.com/31414c6b4ba54a31b41c7ae2ae29a84b/tumblr_oe1gmc4l9c1tduf00o2_500.gif",
 
 );
 $total_gage_SampleGirl = count($aGageSampleGirl);
