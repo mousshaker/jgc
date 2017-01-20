@@ -498,6 +498,11 @@ form{
 	font-size: 0.80em;
 }
 
+.marginBloc{
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
 .show{
     color: #fff;
     background: #070735;

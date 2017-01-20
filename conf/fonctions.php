@@ -277,6 +277,17 @@ function wChangeNameInLogGlobal($path,$action,$oldName,$newName) { // Fonction d
         
 }
 
+function listGage($limit,$vGage){
+    for($i=0;$i<$limit;$i++){
+		$number=$i+1;
+		//$gage="gage".$number;
+		$gages=$vGage[$number];
+		echo "<font size='1px'><i>[".$number."] - ".$gages."</i></font><br>";
+	}
+    
+    //echo "pouet";
+
+}
 
 
 

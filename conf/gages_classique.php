@@ -71,7 +71,7 @@ $aGageP3 = array(
 11=> "Sucer/lécher le sexe de l'autre en ayant les yeux bandés (20 sec)",
 12=> "Sucer/lécher le sexe de l'autre en étant allongé(e) (20 sec)",
 13=> "Jouer avec un objet/sextoy sur l'autre (30 sec)",
-14=> "Recevoir un doigt de l'autre dans l'anus",
+14=> "Tout en ayant les yeux bandés, mettre votre corps à disposition de la langue et des mains de l'autre (40 sec)",
 15=> "Sucer/lécher le sexe de l'autre en étant en 69 (mais vous seul(e) léchez l'autre) -> 30sec",
 16=>"Provoquer l'orgasme de l'autre ET recevoir sa semence/cyprine sur le corps",
 );
@@ -96,6 +96,7 @@ $aGageP6 = array(
 12=>"Se faire lécher le sexe par l'autre, un doigt dans l'anus (15sec)",
 13=> "Caresser/masturber le sexe de l'autre d'une main en lui serrant la gorge de l'autre main (30sec)",
 14=>"Sucer/Lécher le sexe de l'autre en lui disant des choses crues (30sec)",
+15=>"Recevoir un doigt de l'autre dans l'anus",
 );
 $total_gage_page6 = count($aGageP6);
 
@@ -124,6 +125,7 @@ $aGageP8 = array(
 17=>"Sucer/lécher le sexe de l'autre alors qu'il/elle guide les mouvements de son sexe (30sec)",
 18=>"Se faire attraper les cheveux/tête fermement et amener la tête jusqu'au sexe de l'autre. Puis embrasser son sexe",
 19=>"Caresser/masturber le sexe de l'autre d'une main en lui serrant la gorge de l'autre main (30sec)",
+20=>"Tout en ayant les yeux bandés, mettre votre corps à disposition de la langue et des mains de l'autre (40 sec)"
 
 
 );

@@ -68,21 +68,21 @@ if (isset($_POST['read'])){// Si le bouton "des" est actionné
 	</div>
 
 
+	<!-- bandeau de résultat -->
 	<div class="resultat <?php echo $page3; ?>BG">
 	<?php echo $resultat.'<br>'; ?>
 	</div>
-
-	<?php
-	echo '</br>______________________________________
-	</br> Pour rappel, vous pouvez afficher la liste des gages '.$page3.'s possibles : <button class="show">'.$showHide.'</button></br></br><p>';
-
-	for($i=0;$i<$limit;$i++){
-		$number=$i+1;
-		//$gage="gage".$number;
-		$gages=$vGage[$number];
-		echo "<font size='1px'><i>[".$number."] - ".$gages."</i></font></br>";
-	}
-?>
+	
+    <!-- liste des gages -->
+	<div class="marginBloc">
+        Pour rappel, vous pouvez afficher la liste des gages <?php echo $page3 ?>s possibles : <button class="show"><?php echo $showHide ?></button>
+    </div>
+    <p>
+        <?php #on affiche la liste des gages
+        listGage($limit,$vGage); ?>
+    </p>
+    <?php #Inclusion footer
+    include($footer); ?>
 </div>
 
 
