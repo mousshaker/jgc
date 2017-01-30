@@ -1,3 +1,5 @@
 jgc.png
-data/**
+application/data/*
 php.ini
+old_version
+.idea/*

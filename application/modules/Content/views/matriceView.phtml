@@ -1,0 +1,120 @@
+
+
+<?php
+/*
+*       @type           = VIEW
+*       @profil         = ADMINISTRATEUR
+*
+* DESCRIPTION :
+* Permet de sélectionner un Collège pour afficher un rapport
+* OU
+* Permet de sélectionner un TAG pour afficher un rapport
+*/
+
+/* Définition des variables globales */
+global $message,$limit,$vGage,$resultat,$choix,$nbLettre,$nbChiffre;
+
+if(TYPE_GAGE ==1){
+?>
+<div class="MenuOnline">
+    VERSION ONLINE
+</div>
+<?php } ?>
+
+
+
+
+<div class="levelTitle <?php echo $GLOBALS['page'.PAGE_CODE]; ?>">
+<?php echo $GLOBALS['page'.PAGE_CODE]; ?><br>
+</div>
+<div class="wrapper" style="overflow-x:auto;">
+	<div class="blocText">
+		<p>Ce module spécifique est prévu pour fonctionner avec le "tableau des supplices" (clic en bas de page).
+		</p>
+
+		<p>Il s'agit d'un tableau regroupant des gages classés par niveaux d'intensité (1 à 10) et par variantes pour chaque niveau (de A à E). <br>
+		En fonction de votre choix (combo, A-E ou 1-10), la matrice choisira aléatoirement un combo de lette-chiffre, une lettre (ne choisissant ainsi que la variante) ou un chiffre (ne choissant alors que le niveau d'intensité).
+		</p>
+		
+		Bon jeu et douce torture, malicieux suppliciés...
+	</div>
+
+	<table class="tableBorder tableShow">
+	<tr>
+	<?php
+		for ($j=0;$j<=$nbChiffre;$j++){
+			// pour ne pas que le "0" s'affiche
+			if($j!=0){
+				// si le chiffre = chiffre sélectionné ou le dernier résultat
+				if($j==$chiffe OR $j==$choix){
+					//color le BG de la cellule
+					echo "<td class='colorBlanc bgColorDarkDefault'>".$j."</td>";
+				}
+				else{
+					echo "<td class='colorBlanc'>".$j."</td>";
+				}
+				
+			}
+			else{
+				echo "<td></td>";
+			}
+			
+		}
+	?>
+	</tr>
+
+	<?php
+
+	for ($i=0;$i<$nbLettre;$i++){
+		// si la lettre = lettre sélectionnée ou le dernier résultat
+		if($GLOBALS['alphabet'][$i]==$lettre OR $GLOBALS['alphabet'][$i]==$choix){
+			//color le BG de la cellule
+			echo "<td class='colorBlanc bgColorDarkDefault'>".$GLOBALS['alphabet'][$i]."</td>";
+		}
+		else{
+			echo "<tr><td class='colorBlanc'>".$GLOBALS['alphabet'][$i]."</td>";
+		}
+
+		for ($j=1;$j<=$nbChiffre;$j++){
+			//if($GLOBALS['alphabet'][$i]==$lettre AND $j==$chiffe){
+			$line = $GLOBALS['alphabet'][$i]."-".$j;
+			//echo $condition." et ".$choix;
+			if($line==$choix){
+				echo "<td class='infoSmall tdShow bgDefaultColor colorDarkDefault'>".$line."</td>";
+			}
+			else{
+				echo "<td class='infoSmall tdShow colorDefault'>".$line."</td>";
+			}
+			
+		}
+		echo "</tr>";
+	}
+	?>
+		
+	</table>
+
+	<div class="contenu">
+	<form method="post">
+			<input type="submit" class="<?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG lanceur" name="chooseCombo" value="Combo" >
+			<input type="submit" class="<?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG lanceur" name="chooseLetter" value="A-E" >
+			<input type="submit" class="<?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG lanceur" name="chooseNum" value="1-10" >
+	</form>
+	<form method="post">
+			<input type="submit" name="read" value="<?php echo $GLOBALS['seeLastResult']; ?>" class="lanceur darkButton">
+	</form>
+
+	</div>
+
+
+	<div class="resultat <?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG">
+	<?php echo $choix; ?><br>
+	</div>
+
+	<div class="footer">
+	Voir le <a href="<?php echo $GLOBALS['tableauSupplice']; ?>" TARGET="_blank">Tableau des supplices</a><br>
+	</div>
+</div>
+
+
+
+

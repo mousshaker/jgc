@@ -1,0 +1,33 @@
+Process :
+
+1/ La page ".php" qui se trouve dans /public appelle BOOSTRAP
+2/ BOOSTRAPP détermine : le controller [module_execute( 'Layout')] et le template [module_render( 'Layout')]
+3/ Par défaut, c'est le controller "Layout" qui est appelé (modules/Layout/controlles/indexC.php) et la vue "Layout" (modules/Layout/views/indexC.php)
+
+Le "views" de "Layout" est le template générique qui détermine la forme du site (le fait qu'il y ai un bandeau du haut, un corps de page et un footer)
+
+Pour retirer un "module" du site (exemple "Auth"), il faut donc retirer son appel dans le Controller "Layout" ET dans le viewx "Layout"
+
+A savoir :
+ce jeu comporte :
+- type de gage (online, classique)
+- type de page (classique(pour des gages avec 1 dé et une liste), doublePlayer (pour des gages avec 2 joueurs + 2 dés + 2 listes), matrice (tableau de coorconées))
+- au sein de "doublePlayer" il y a 2 types de jeu (le de gage, le jeu du 21)
+
+
+Comme on peut le voir, il n'y a que 2 pages dans /public
+- la page d'index
+- la page de gage
+
+Les différentes versions (sensuel, hot,...) ne sont que des variantes d'un genre de page commun "gage.php".
+Tout va alors se jouer dans les paramètres envoyés (configuré dans le module "Menu" : Controllers/indexC.php et /view/menuD.phtml ou menuV.phtml) qui sélectionnera un controller en fonction du "type de gage" et du "type de page".
+
+Tout dabord, la page "public" appelée (/public/index.php ou /public/gage.ph) détermine quel Controller appeler grâce au "typepage" (classic,doublePlayer,mmatrice) et set aussi le "typeplay" (gage, jeu21)
+Ensuite elle détermine la "route" (vers quelle version aller : sensuel, hot,...) grâce au CODE_PAGE envoyé
+Enfin le type de gage grâce au TYPE_GAGE envoyé (classique, online)
+
+
+
+le controller du module Menu choisi la version du menu à afficher (il choisi la "view" entre menuD et menuV - > module/Menu/controllers/indexC.php)
+
+le controller du module Contenu 

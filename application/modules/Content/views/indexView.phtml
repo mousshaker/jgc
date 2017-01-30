@@ -1,0 +1,55 @@
+<?php 
+
+/**
+Index général.
+Si l'utilisateur arrive sur cette page, c'est qu'il n'est pas authentifé.
+Ce Module VIEW INDEX est donc vide, car le formulaire de connexion apparaît dans le Module AUTH LOGIN
+
+**/
+
+if(TYPE_GAGE ==1){
+?>
+<div class="MenuOnline">
+    VERSION ONLINE
+</div>
+<?php } ?>
+
+<div class="wrapper" style="overflow-x:auto;">
+<h1>Bienvenu sur le jeu de gage coquin</h1>
+	<div class="blocText">
+    <?php if(TYPE_GAGE == 1){ ?>
+	    <p>
+		Voici un petit module de choix aléatoire de gages, parmi une liste prédéfinie spécialement adaptée au jeu à distance.<br>
+		Suivant le même principe que la "version classique", en fonction du niveau d'intensité que vous souhaitez jouer, cliquez dans le menu en haut.<br>
+		Suivant le niveau sélectionné, les gages seront plus ou moins osés, allant du sensuel soft à l'osé très franc.
+		<br>
+		Bon jeu.
+        </p>
+    <?php }
+        if(TYPE_GAGE == 0){ ?>
+		<p>
+        Voici un petit module de choix aléatoire de gages coquins, parmi des listes prédéfinies.<br>
+		Suivant le niveau d'intensité (la version) que vous souhaitez jouer (<?php echo $page1.', '.$page2.', '.$page3.', '.$page6; ?>), cliquez dans le menu en haut.<br>
+		En fonction de la version, les gages seront plus ou moins osés, allant du sensuel soft à l'osé très franc.
+		</p>
+		<p>
+		Si vous avez accès au <i><a href="gage?codepage=4&typegage=0" class="<?php echo $GLOBALS['page4']; ?>">Tableau des supplices</a></i>, vous pouvez alors utiliser le module spécifique prévu à cet effet.<br>
+		-> + d'info sur le module <a href="gage?codepage=4&typegage=0" class="<?php echo $GLOBALS['page4']; ?>"><?php echo $GLOBALS['page4']; ?> </a></a>
+		</p>
+		<p>
+		Si vous disposez déjà d'un tableau de matrice personnel de gages ou que vous avez envie d'en créer un à vous (pour être libre dans le nombre et dans le type de gages), vous pouvez alors utiliser le module spécifique prévu à cet effet.<br>
+		Il vous permet d'obtenir une combinaison aléatoire d'un chiffre et d'une lettre.<br>
+		-> + d'info sur le module <a href="page5.php" class='<?php echo $page5; ?>'> <?php echo $page5; ?></a>
+		</p>
+		<p>
+		Enfin Si vous êtes loin de votre partenaire, vous pouvez utiliser la <a href="online/index.php"><?php echo $online; ?> </a> avec des gages spéciaux "longue distance".<br>
+		</p>
+    <?php } ?>
+		Des questions ? Des remarques ? Vous souhaitez compléter/modifier/ajouter un niveau de gage ?<br>
+		N'hésitez pas à contacter le développeur (lien direct en bas de page)
+	</div>
+</div>
+<?php
+    
+
+
