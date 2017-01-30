@@ -1,20 +1,13 @@
 <?php
 
 /* Définition des variables globales. */
-global $viewContent, $title, $messages, $bIsAuthenticated, $ProfilSession, $UsernameSession,$rootpath;
+global $viewContent;
 
 
-
-//connexionbdd();
-//$bIsAuthenticated = FALSE;
-
-
-/* Si l'utilisateur est déjà authentifié, on exécute le Controller ECRAN2 */
-if ($bIsAuthenticated) { 
-	module_execute( 'Content','accueil');
+if(TYPE_PAGE == 3){
+    $viewContent = 'simpleContentView';
 }
-
-/* Sinon (c'est que c'est un profil Rapporteur)*/
 else{
-	$viewContent = 'indexView';
+    $viewContent = 'indexView';
 }
+

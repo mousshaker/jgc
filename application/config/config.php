@@ -27,7 +27,7 @@ $queries = 0;
 
 $GLOBALS['alphabet'] = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
 
-$creator = 'Mousshaker';
+$GLOBALS['creator'] = 'Mousshaker';
 
 $siteTitle = "Jeu de gages coquins";
 $siteTitleShort = "JGC";

@@ -4,7 +4,7 @@
 * gage? = la page publique cible qui appelera le bon controller (public/gage.php)
 * codepage = la variante de page (sensuel, hot,...). ce code est déterminé en fonction des variables $GLOBALS['pageN'] dans config.php.
 * typegage = classique (0) ou online (1)
-* typepage = gage classique, doublePlayer, matrice
+* typepage = gage classique (0), doublePlayer (1), matrice (2), simpleContent (3)
 * typleplay =  jeu de 21 (typeplay=0), gage à double joueurs (typeplay=1)
 */
 
@@ -23,6 +23,6 @@ global $viewMenu;
 		<li class="ul_responsive"><a href="gage?codepage=4&typegage=0&typepage=2" class="<?php echo $GLOBALS['page4']; ?>"><?php echo $GLOBALS['page4']; ?> </a></li>
 		<li class="ul_responsive"><a href="gage?codepage=9&typegage=0&typepage=1&typeplay=1" class="<?php echo $GLOBALS['page9']; ?>"><?php echo $GLOBALS['page9']; ?> </a></li>
 		<li class="ul_responsive"><a href="gage?codepage=10&typegage=0&typepage=1&typeplay=0" class="<?php echo $GLOBALS['page10']; ?>"><?php echo $GLOBALS['page10']; ?> </a></li>
-		<li class="ul_responsive"><a href="<?php echo $GLOBALS['page0']; ?>?typeplay=1" class="<?php echo $GLOBALS['page0']; ?>"><?php echo $GLOBALS['online']; ?> </a></li>
+		<li class="ul_responsive"><a href="<?php echo $GLOBALS['page0']; ?>?typegage=1" class="<?php echo $GLOBALS['page0']; ?>"><?php echo $GLOBALS['online']; ?> </a></li>
 	</ul>
 </nav>

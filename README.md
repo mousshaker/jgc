@@ -16,12 +16,10 @@ Copiez tout simplement tel quel l'ensemble des fichiers du dépôt dans votre ra
 - 4 listes (pour 4 niveaux d'intensité de gages)
 - 1 liste "medley" reprenant un pot-pourri des 4 listes
 - 1 version "supplice" (basée sur un matrice de gages : un tableau avec 10 niveaux de gages et 5 variantes par niveau)
-- 1 matrice personnalisable
 - 1 version illustrée (les gages sont des images illustrées au lieu de descriptifs en phrases)
-- 1 version "online" avec 3 listes de gages spécifiques pour les jeux "à distance" + des exemples illustrés pour inspiration
+- 1 version "online" avec 3 listes de gages spécifiques pour les jeux "à distance" + une version illustrés
 - 1 jeu de 21 (lancé de dés pour obtenir 21) afin d'obtenir des gages
-- 1 compteur de gages (pour 2 joueurs)
-- des logs
+- des logs (volontairement non accessible depuis le front. il faut aller chercher les fichier dans /data)
 
 <h2>Notes / infos </h2>
 Attention : l'image de background est ici à titre illustratif, mais aucun droit d'utilisation n'a été cédé par l'auteur de la photo. Pensez à remplacer l'exemple par une photo dont vous avez les droits nécessaires.
