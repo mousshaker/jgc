@@ -41,7 +41,7 @@ if (isset($_POST['resultNb'])){// Si le bouton "des" est actionné
 
 	//on écrit le nouveau résultat (numéro du gage) 
 	wLog($dataPath,$GLOBALS['page'.PAGE_CODE],$choix);
-	wLogGlobal($dataPathGlobal,$GLOBALS['page'.PAGE_CODE],$choix);
+	wLogGlobal($dataPath,$GLOBALS['page'.PAGE_CODE],$choix);
 	
 	//on récupère le numéro du gage inscrit dans les logs
 	$num = wLogRead($dataPath,$GLOBALS['page'.PAGE_CODE]);

@@ -7,6 +7,8 @@
 		font-weight: bold;
 		margin-top: 10px;
     	margin-bottom: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
     	font-variant:small-caps;
 	}
 	.illuResultGage{
@@ -287,8 +289,8 @@ ol, ul {
 	background-color: #41415f;
 	width:auto;
 	text-align: center;
-	padding:5px;
-	margin-top: 10px;
+	padding:15px;
+	margin-top: 5px;
 	font-variant:small-caps;
 }
 

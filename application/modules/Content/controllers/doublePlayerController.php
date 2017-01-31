@@ -139,12 +139,24 @@ if(TYPE_PLAY == 1){
 ## Si on clique sur EFFACER ##
 if(isset($_POST['erase'])){
     if(TYPE_PLAY == 0){
+        if(TYPE_GAGE==0){ // si version classique
         $player1 = 'dice_play1';//on initialise player 1 pour choisir le bon fichier log
         $player2 = 'dice_play2';
+        }
+        if(TYPE_GAGE==1){// si version online
+            $player1 = 'online_dice_play1';//on initialise player 1 pour choisir le bon fichier log
+            $player2 = 'online_dice_play2';
+        }
     }
     if(TYPE_PLAY == 1){
+        if(TYPE_GAGE==0){ // si version classique
         $player1 = 'gage_play1';//on initialise player 1 pour choisir le bon fichier log
         $player2 = 'gage_play2';
+        }
+        if(TYPE_GAGE==1){// si version online
+            $player1 = 'online_gage_play1';//on initialise player 1 pour choisir le bon fichier log
+            $player2 = 'online_gage_play2';
+        }
     }
 	
 	# on vérifie que le fichier existe, sinon il se crée

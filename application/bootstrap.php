@@ -1,5 +1,5 @@
 <?php
-define('ROOTPATH', 'http://localhost/apigit/jgcpoo/application', true);
+define('ROOTPATH', 'http://localhost/apigit/jgc/application', true);
 /* Définition des constantes systèmes. */
 define( 'PATH_ABSOLUT',		'../application/');
 define( 'PATH_CONF',			'config');
@@ -8,13 +8,9 @@ define( 'PATH_VAR',				PATH_ABSOLUT.'/data');
 
 /* Inclusion des librairies. */
 include(PATH_LIB.'/module.php'); 
+include(PATH_LIB.'/translations/translation_fr.php');
 include(PATH_CONF.'/config.php');
 include(PATH_CONF.'/fonctions.php');
-//include(PATH_CONF.'/style.css');
-
-
-
-
 ?>
 <!-- Inclusion des styles CSS -->
 <style type="text/css">
@@ -30,11 +26,9 @@ include(PATH_CONF.'/fonctions.php');
 
 
 
-
 <?php 
-
 /** Exécution des traitements. 
-On execute le module LAYOUT, qui par défaut exécutera INDEX.PHP et affichera INDE.PHTML
+On execute le module LAYOUT, qui par défaut exécutera INDEX.PHP et affichera INDXE.PHTML
 Comme le précise la page LIBRARY MODULE.PHP 
 Pour Exécuter un autre template, il suffira de mettre module_execute( 'layout', 'NomTemplate')
 A condition d'avoir créé au préalable un NomTemplate :p */

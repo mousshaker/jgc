@@ -10,9 +10,9 @@ Pour retirer un "module" du site (exemple "Auth"), il faut donc retirer son appe
 
 A savoir :
 ce jeu comporte :
-- type de gage (online, classique)
-- type de page (classique(pour des gages avec 1 dé et une liste), doublePlayer (pour des gages avec 2 joueurs + 2 dés + 2 listes), matrice (tableau de coorconées))
-- au sein de "doublePlayer" il y a 2 types de jeu (le de gage, le jeu du 21)
+- [typegage] type de gage : (online, classique) 
+- [typepage] type de page  : (classique(pour des gages avec 1 dé et une liste), doublePlayer (pour des gages avec 2 joueurs + 2 dés + 2 listes), matrice (tableau de coorconées)) 
+- [typeplay] au sein de "doublePlayer" il y a 2 types de jeu  (le jeu de gage, le jeu du 21)
 
 
 Comme on peut le voir, il n'y a que 2 pages dans /public
@@ -29,5 +29,3 @@ Enfin le type de gage grâce au TYPE_GAGE envoyé (classique, online)
 
 
 le controller du module Menu choisi la version du menu à afficher (il choisi la "view" entre menuD et menuV - > module/Menu/controllers/indexC.php)
-
-le controller du module Contenu 
