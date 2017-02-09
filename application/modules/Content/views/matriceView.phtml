@@ -94,19 +94,19 @@ if(TYPE_GAGE ==1){
 	</table>
 
 	<div class="contenu">
-	<form method="post">
+	<form method="post" action="#result"> <!-- on envoie vers l'ancre #result -->
 			<input type="submit" class="<?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG lanceur" name="chooseCombo" value="Combo" >
 			<input type="submit" class="<?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG lanceur" name="chooseLetter" value="A-E" >
 			<input type="submit" class="<?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG lanceur" name="chooseNum" value="1-10" >
 	</form>
-	<form method="post">
+	<form method="post" action="#result"> <!-- on ajoute l'ancre #result -->
 			<input type="submit" name="read" value="<?php echo $GLOBALS['seeLastResult']; ?>" class="lanceur darkButton">
 	</form>
 
 	</div>
 
 
-	<div class="resultat <?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG">
+	<div id="result" class="resultat <?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG">
 	<?php echo $choix; ?><br>
 	</div>
 

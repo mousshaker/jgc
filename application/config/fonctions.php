@@ -3,7 +3,7 @@ header('Content-Type: text/html; charset=utf-8');
 date_default_timezone_set("Europe/Paris");
 
 /*
-Neoterranos & LkY
+Moussh@ker
 Page fonctions.php
 
 Contient quelques fonctions globales.
@@ -290,11 +290,8 @@ function listGage($limit,$vGage){
 }
 
 
-
-
-
-function doubleListe($list1,$list2){
-    for($i=1;$i<=50;$i++){
+function doubleListe($list1,$list2,$limit){
+    for($i=1;$i<=$limit;$i++){
         echo '<tr>';
         echo '<th>F '.$i.'</th>';
         echo '<td class="tdShow"><img src="'.$list1[$i].'" class="illuGage"></td>';
