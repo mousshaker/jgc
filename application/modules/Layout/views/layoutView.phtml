@@ -1,9 +1,10 @@
 <?php 
 
-/* Définition des variables globales. */
-global $viewFooter, $viewAuth, $viewContent,$viewMenu, $messages;
-
+#-> DEFINITION DES VARIABLES GLOBALES <-#
+    global $viewFooter, $viewAuth, $viewContent,$viewMenu;
+#-> END <-#
 ?>
+
 <html>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Balise magique pour le responsive -->
@@ -21,6 +22,7 @@ global $viewFooter, $viewAuth, $viewContent,$viewMenu, $messages;
 			<?php// echo module_render( 'Auth', $viewAuth); ?>
 			<div class="wrapper" style="overflow-x:auto;">	
                 <header>
+                    <!-- bouton MENU pour version Mobile -->
                     <a class="to_nav" href="#primary_nav">Listes</a>
                 </header>
             </div>

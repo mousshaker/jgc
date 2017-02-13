@@ -7,12 +7,14 @@ Ce Module VIEW INDEX est donc vide, car le formulaire de connexion apparaît dan
 
 **/
 
-if(TYPE_GAGE ==1){
-?>
-<div class="MenuOnline">
-    VERSION ONLINE
-</div>
-<?php } ?>
+#-> AFFICHAGE/MASQUAGE BANDEAU "ONLINE" <-#
+    if(TYPE_GAGE ==1){ # Si on est en version ONLINE, afficher le bandeau spécifique
+    ?>
+    <div class="MenuOnline">
+        VERSION ONLINE
+    </div>
+    <?php } 
+#-> END <-#?>
 
 <div class="wrapper" style="overflow-x:auto;">
 <h1><?php echo $GLOBALS['philoNa']; ?></h1>

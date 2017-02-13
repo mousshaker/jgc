@@ -8,7 +8,7 @@ Fichier de traduction des variables globales permettant le remplacement de texte
 
 $GLOBALS['alphabet'] = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
 
-$GLOBALS['creator'] = 'Mousshaker';
+$GLOBALS['creator'] = 'Whoroot';
 
 $siteTitle = "Jeu de gages coquins";
 $siteTitleShort = "JGC";
@@ -25,6 +25,17 @@ $GLOBALS['page7'] = "jeu21";
 $GLOBALS['page8'] = "medley";
 $GLOBALS['page9'] = "illustree";
 $GLOBALS['page10'] = "jeu21";
+
+## Configuration des noms des Modules de templates
+$GLOBALS['module0'] = "Layout";
+
+
+## Configuration des noms des Controllers de templates
+$GLOBALS['controller0'] = "layout";
+
+
+## Configuration des noms des Views de templates
+$GLOBALS['view0'] = "layout";
 
 
 ## configuration des intitulés ##

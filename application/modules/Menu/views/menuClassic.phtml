@@ -1,15 +1,16 @@
 <?php
 /*
-* C'est ici que sont envoyés tous les paramètres nécessaire au traitement à effectuer.
-* gage? = la page publique cible qui appelera le bon controller (public/gage.php)
+* C'est ici que sont envoyés tous les paramètres nécessaire au traitement à effectuer dans boostrap et les controller des MODULES
+* gage? = nom de la page publique cible qui appelera le bon controller (public/gage.php). le ? indiquant qu'on va y ajouter des paramètres à envoyer.
 * codepage = la variante de page (sensuel, hot,...). ce code est déterminé en fonction des variables $GLOBALS['pageN'] dans config.php.
 * typegage = classique (0) ou online (1)
-* typepage = gage classique (0), doublePlayer (1), matrice (2), simpleContent (3)
+* typepage = gage classique (0), doublePlayer (1), matrice (2), simpleContent (3). En gros, 1 type de page pour 1 Controller du module Content.
 * typleplay =  jeu de 21 (typeplay=0), gage à double joueurs (typeplay=1)
 */
 
-/* Définition des variables globales. */
-global $viewMenu;
+#-> DEFINITION DES VARIABLES GLOBALES <-#
+    global $viewMenu;
+#-> END <-#
 ?>
 
 

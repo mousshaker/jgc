@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Lance l'exécution des traitements.
+ * Lance l'exécution des traitements du module appelé.
  * 
  * @param		string $sName
  * @param		string $sController[optional]
@@ -14,7 +14,7 @@ Par défaut, si aucun Controller n'est spécifié, le module exécutera l'Index
 comme le précise $sController = 'index'
 **/
 
-function module_execute( $sName, $sController='indexC') {
+function module_execute( $sName, $sController='indexController') {
 	include("../application/modules/{$sName}/controllers/{$sController}.php");
 }
 
@@ -25,7 +25,7 @@ function module_execute( $sName, $sController='indexC') {
  * @param		string $sView[optional]
  * @return	string
  */
-function module_render( $sName, $sView='indexV') {
+function module_render( $sName, $sView='indexView') {
 	
 	/* Démarage du tampon de sortie. */
 	ob_start( );

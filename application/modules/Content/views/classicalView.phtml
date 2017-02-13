@@ -1,23 +1,25 @@
 <?php
 /*
 *       @type           = VIEW
-*       @profil         = ADMINISTRATEUR
 *
 * DESCRIPTION :
-* Permet de sélectionner un Collège pour afficher un rapport
-* OU
-* Permet de sélectionner un TAG pour afficher un rapport
+* Gère les pages de type "classique" 
+* -> les gages avec 1 seule liste + 1 dé
+* sensuel, coquin, hot, medley, deviant... (déterminé grâce au PAGE_CODE)
 */
 
-/* Définition des variables globales */
-global $message,$limit,$vGage,$resultat;
+#-> DEFINITION DES VARIABLES GLOBALES <-#
+    global $viewContent,$erreur,$limit,$vGage,$resultat;
+#-> END <-#
 
-if(TYPE_GAGE ==1){
-?>
-<div class="MenuOnline">
-    VERSION ONLINE
-</div>
-<?php } ?>
+#-> AFFICHAGE/MASQUAGE BANDEAU "ONLINE" <-#
+    if(TYPE_GAGE ==1){ # Si on est en version ONLINE, afficher le bandeau spécifique
+    ?>
+    <div class="MenuOnline">
+        VERSION ONLINE
+    </div>
+    <?php } 
+#-> END <-#?>
 
 
 

@@ -6,20 +6,21 @@
 *       @profil         = ADMINISTRATEUR
 *
 * DESCRIPTION :
-* Permet de sélectionner un Collège pour afficher un rapport
-* OU
-* Permet de sélectionner un TAG pour afficher un rapport
+* Affiche une vue MATRICE (grille de choix)
 */
 
-/* Définition des variables globales */
-global $message,$limit,$vGage,$resultat,$choix,$nbLettre,$nbChiffre;
+#-> DEFINITION DES VARIABLES GLOBALES <-#
+    global $viewContent,$erreur,$lastPlayer,$choix,$nbLettre,$nbChiffre;
+#-> END <-#
 
-if(TYPE_GAGE ==1){
-?>
-<div class="MenuOnline">
-    VERSION ONLINE
-</div>
-<?php } ?>
+#-> AFFICHAGE/MASQUAGE BANDEAU "ONLINE" <-#
+    if(TYPE_GAGE ==1){ # Si on est en version ONLINE, afficher le bandeau spécifique
+    ?>
+    <div class="MenuOnline">
+        VERSION ONLINE
+    </div>
+    <?php } 
+#-> END <-#?>
 
 
 
@@ -43,11 +44,11 @@ if(TYPE_GAGE ==1){
 	<tr>
 	<?php
 		for ($j=0;$j<=$nbChiffre;$j++){
-			// pour ne pas que le "0" s'affiche
+			# pour ne pas que le "0" s'affiche
 			if($j!=0){
-				// si le chiffre = chiffre sélectionné ou le dernier résultat
+				# si le chiffre = chiffre sélectionné ou le dernier résultat
 				if($j==$chiffe OR $j==$choix){
-					//color le BG de la cellule
+					#color le BG de la cellule
 					echo "<td class='colorBlanc bgColorDarkDefault'>".$j."</td>";
 				}
 				else{
@@ -66,9 +67,9 @@ if(TYPE_GAGE ==1){
 	<?php
 
 	for ($i=0;$i<$nbLettre;$i++){
-		// si la lettre = lettre sélectionnée ou le dernier résultat
+		# si la lettre = lettre sélectionnée ou le dernier résultat
 		if($GLOBALS['alphabet'][$i]==$lettre OR $GLOBALS['alphabet'][$i]==$choix){
-			//color le BG de la cellule
+			# color le BG de la cellule
 			echo "<td class='colorBlanc bgColorDarkDefault'>".$GLOBALS['alphabet'][$i]."</td>";
 		}
 		else{
@@ -76,7 +77,6 @@ if(TYPE_GAGE ==1){
 		}
 
 		for ($j=1;$j<=$nbChiffre;$j++){
-			//if($GLOBALS['alphabet'][$i]==$lettre AND $j==$chiffe){
 			$line = $GLOBALS['alphabet'][$i]."-".$j;
 			//echo $condition." et ".$choix;
 			if($line==$choix){

@@ -4,20 +4,25 @@
 *       @profil         = ADMINISTRATEUR
 *
 * DESCRIPTION :
-* Permet de sélectionner un Collège pour afficher un rapport
-* OU
-* Permet de sélectionner un TAG pour afficher un rapport
+* Gère les pages de type "DoublePlayer" 
+* -> les gages avec 2 listes + 1 dé pour chaque joueur
+* jeu de 21, illustré... (déterminé grâce au PAGE_CODE)
 */
 
-/* Définition des variables globales */
-global $messages,$lastPlayer,$resultat_to_show,$resultat_URL,$count1,$count2,$choix1,$choix2;
+#-> DEFINITION DES VARIABLES GLOBALES <-#
+    global $viewContent,$erreur,$lastPlayer,$resultat_to_show,$resultat_URL,$count1,$count2,$choix1,$choix2;
+#-> END <-#
 
-if(TYPE_GAGE ==1){
-?>
-<div class="MenuOnline">
-    VERSION ONLINE
-</div>
-<?php } ?>
+#-> AFFICHAGE/MASQUAGE BANDEAU "ONLINE" <-#
+    if(TYPE_GAGE ==1){ # Si on est en version ONLINE, afficher le bandeau spécifique
+    ?>
+    <div class="MenuOnline">
+        VERSION ONLINE
+    </div>
+    <?php } 
+#-> END <-#?>
+
+
 
 <div class="levelTitle <?php echo $GLOBALS['page'.PAGE_CODE]; ?>">
 <?php echo $GLOBALS['page'.PAGE_CODE]; ?><br>
@@ -25,6 +30,7 @@ if(TYPE_GAGE ==1){
 
 <div class="wrapper" style="overflow-x:auto;">
 <?php if (PAGE_CODE==9){ ?>
+    <!-- gages illustrés -->
 	<div class="blocText">
 	La version illustrée est, comme son nom l'indique, une liste de gages illustrés chacun en image. Il n'y a qu'à reproduire ce qu'elle montre.<br>
 	Ici, les gages sont spécifiques Homme et Femme. Il faudra donc lancer le dé correspondant à l'un de ces 2 types de gages.<br>
@@ -32,6 +38,7 @@ if(TYPE_GAGE ==1){
 	</div>
 <?php } ?>
 <?php if (PAGE_CODE==10){ ?>
+    <!-- jeu du 21 -->
 	<div class="blocText">
 	Le jeu du 21 est très simple : 1 lancé de 2 dés à 6 faces. <br>
 	A chaque lancé, on additionne les résultats des 2 dés, qu'on ajoute au résultat précédant (compteur). <br>

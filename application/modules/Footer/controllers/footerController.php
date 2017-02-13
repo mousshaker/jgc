@@ -3,4 +3,4 @@
 global $viewFooter, $title, $messages;
 
 
-$viewFooter = 'indexFooterV';
+$viewFooter = 'footerView';

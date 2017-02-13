@@ -1,0 +1,62 @@
+#### PROCESS ####
+
+## INTRO :
+    Les pages ne se situent pas à la racine du site.
+    Le site en MVC est composé d'un repertoire /application (qui comporte  tous les traitements) et d'un répertoire /public (qui comporte les pages accessibles en front)
+    La racine du site ne doit donc comporter que ces deux répertoire.
+    Le présent fichier, ainsi que le schéma et le README.md doient rester en local
+
+## A SAVOIR
+    Les logs se trouvent dans application/data
+
+## FONCTIONNEMENT ##
+    1/ La page ".php" qui se trouve dans /public appelle BOOSTRAP en envoyant les paramètres [codepage], [typepage], [typegage], [typeplay], $iLayoutController et
+    $iLayoutView; setés dans le Menu
+    2/ En fonction de ces 2 derniers paramètre ($iLayoutController et
+    $iLayoutView) BOOSTRAPP détermine le/les Module(s) de "construction" à exécuter.
+    Soit :
+    - le controller [module_execute( 'nameController')]
+    - le template [module_render( 'nameView')] à exécuter.
+
+    A noter : appeler un Module, c'est appeler un Controller (qui calcul et exécute les fonctions), qui lancera un view d'affichage des résultat (un template d'affichage)
+
+    3/ Par défaut, c'est le Module "Layout" qui est appelé, car c'est lui qui construit la structure du site. cf : (modules/Layout/controlles/layoutController.php) et la vue "Layout" (modules/Layout/views/layoutView.phtml)
+
+    Le "layoutView.phtml" de "Layout" est le template générique qui détermine la forme du site (le fait qu'il y ai un bandeau du haut, un corps de page et un footer).
+    On pourra faire autant de templates différents qu'on souhaitera en ajoutant des Controllers et/ou des views à ce module Layout.
+
+    Pour ajouter/retirer un "module" du site (exemple "Auth" -> module d'identification utilisateur), il faut donc ajouter/retirer son appel dans le Controller "Layout" ET dans le view "Layout".
+
+
+    4 / le Module Layout appelle ensuite les modules Menu, Content et Footer 
+    Par défaut dans Layout, le module Menu et Footer sont fixes. On pourra changer cela à souhait en créant un nouveau layoutController.php qui pourra personnaliser les modules Menu et Footer et/ou ajouter d'autres modules)
+    Le module 'Content', quant à lui, est personnalisé en fonction du paramètre que lui envoie l'url (cf étape 1). Cela étant déterminé dans le menu : 'Modules/Menu/controllers/indexC.php' et '/view/menuD.phtml' ou 'menuV.phtml' qui sélectionnera un controller en fonction du "type de gage" [typegage] et du "type de page" [typepage] setés dans le lien href.
+
+    5/ En fonction du Controller du module Content qui est appelé, la view changera.
+    C'est ce qui permettra d'obtenir les différents "type de pages" (classique, double player, matrice,...) qui ne sont en fait que des "variantes" d'un genre de page commun : gage.php. Et non pas des pages indépendantes.
+    Et au sein de ces différents "types de page", on pourra avoir des variantes de contenu (sensuel, hot,... pour CLASSIC / double liste, jeu de 21 pour DOUBLEPLAYER)
+
+
+    Ainsi, comme on peut le voir, il n'y a donc que 2 pages dans /public
+    - la page d'index
+    - la page de gage
+
+    Les différentes versions (sensuel, hot,...) ne sont que des variantes d'un genre de page commun "gage.php" qui se décline lui même en plusieurs types (classique, doublePlayer, matrice...).
+    Tout va alors se jouer dans les paramètres envoyés 
+
+    A chaque appel de page, 
+
+    1/ Tout dabord, la page "public" appelée (/public/index.php ou /public/gage.php) détermine quel Controller appeler grâce au [typepage] (classic,doublePlayer,matrice) et set aussi le [typeplay] (gage, jeu21)
+    2/ Ensuite elle détermine la "route" (vers quelle version aller : sensuel, hot,...) grâce au CODE_PAGE envoyé
+    3/ Enfin le type de gage grâce au TYPE_GAGE envoyé (classique, online)
+
+
+
+    Le Controller du module "Menu", quant à lui, choisi la version (online ou classique) du menu à afficher (il choisi la "view" entre menuD et menuV - > module/Menu/controllers/indexC.php en fonction du paramètre [typegage] envoyé)
+
+
+    A savoir :
+    - [typegage] type de gage : [0]classique, [1]online 
+    - [typepage] type de page  : [0]classique(pour des gages avec 1 dé et une liste), [1]doublePlayer (pour des gages avec 2 joueurs + 2 dés + 2 listes), [2]matrice (tableau de coorconées)) 
+    - [typeplay] : au sein de "doublePlayer" il y a 2 types de jeu  -> [0]jeu du 21, [1]le jeu de gage illustré)
+    - [codepage] version de page : [0]Index, [1]sensuel, [2]coquin,... (cf translation_fr pour les autres clefs. Elles correspondent au "N" de $GLOBALS['pageN'])
