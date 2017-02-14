@@ -42,7 +42,7 @@
         }
 
         if (isset($_POST['player1'])){
-            $lastPlayer = 1;
+            $lastPlayer = 1; # on indique qui est le dernier joueur
             $choix1=rand(1,$limit);# Alors fait un random entre 1 et la limite
             $choix2=rand(1,$limit); # idem pour le dé n°2
 
@@ -69,7 +69,7 @@
             unset($oldScore);
         }  
         if(isset($_POST['player2'])){
-            $lastPlayer = 2;
+            $lastPlayer = 2; # on indique qui est le dernier joueur
             $choix1=rand(1,$limit);# Alors fait un random entre 1 et la limite
             $choix2=rand(1,$limit); # idem pour le dé n°2
 
@@ -111,6 +111,7 @@
         }
 
         if (isset($_POST['player1'])){
+            $lastPlayer = 1; # on indique qui est le dernier joueur
             $result_to_log=rand(1,sizeof($GLOBALS['liste_player1']));
             $resultat_to_show = $result_to_log;
             $resultat_URL=$GLOBALS['liste_player1'][$resultat_to_show];
@@ -126,6 +127,7 @@
             wLogGlobal($dataPathGlobal,$player1,$result_to_log);
         }
         if (isset($_POST['player2'])){
+            $lastPlayer = 2; # on indique qui est le dernier joueur
             $result_to_log=rand(1,sizeof($GLOBALS['liste_player2']));
             $resultat_to_show = $result_to_log;
             $resultat_URL=$GLOBALS['liste_player2'][$resultat_to_show];

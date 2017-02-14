@@ -5,6 +5,7 @@
     define( 'PATH_CONF','config');
     define( 'PATH_LIB','library');
     define( 'PATH_VAR',PATH_ABSOLUT.'/data');
+    define( 'PATH_IMG',PATH_ABSOLUT.PATH_LIB.'/images');
 #-> END <-#
 
 #-> INCLUSION DES LIBRAIRIES <-#

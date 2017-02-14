@@ -388,6 +388,10 @@ form{
 .tdNeutral{
 	padding: 10px;
 }
+.tdFocus{
+    padding: 5px;
+    background-color: #a1a1f0;
+}
 
 
 /* ----------------- CLASSES */
@@ -421,9 +425,10 @@ form{
 
 }
 
-.darkButton{
-	background: #070735;
-	color: #a2a2cb;
+.cellCenter{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .cellCountNumb{
@@ -440,6 +445,10 @@ form{
 	color: #fff;
 }
 
+.darkButton{
+	background: #070735;
+	color: #a2a2cb;
+}
 
 .hot{
 	color: #ae0722;
@@ -500,6 +509,10 @@ form{
 .logBG{
 	max-height: 400px;
 	width: auto;
+}
+
+.logo{
+    width: 150px;
 }
 
 .message{
