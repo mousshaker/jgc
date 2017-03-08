@@ -8,7 +8,7 @@ Fichier de traduction des variables globales permettant le remplacement de texte
 
 $GLOBALS['alphabet'] = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
 
-$GLOBALS['creator'] = 'Gidaz';
+$GLOBALS['creator'] = 'YOALAD';
 
 $siteTitle = "Jeu de gages coquins";
 $siteTitleShort = "JGC";

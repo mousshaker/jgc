@@ -11,7 +11,7 @@ Savoir lire un minimum le HTML et éventuellement un peu le PHP si vous souhaite
 
 <h2> Installation </h2>
 Copiez tout simplement tel quel l'ensemble des fichiers du dépôt dans votre racine serveur/localhost.
-Le fichier "process" ainsi que les schémas et le présent fichier README.dm peuvent rester en local pour simple information
+Le fichier "process" ainsi que les schémas et le présent fichier README.dm peuvent rester en local pour simple information.
 
 <h2>Outils de l'application </h2>
 - 4 listes (pour 4 niveaux d'intensité de gages)

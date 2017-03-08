@@ -10,7 +10,7 @@
 */
 
 #-> DEFINITION DES VARIABLES GLOBALES <-#
-    global $viewContent,$erreur,$lastPlayer,$resultat_to_show,$resultat_URL,$count1,$count2,$choix1,$choix2;
+    global $viewContent,$erreur,$lastPlayer,$resultat_to_show,$resultat_URL,$count1,$count2,$choix1,$choix2,$limite_list;
 #-> END <-#
 
 #-> AFFICHAGE/MASQUAGE BANDEAU "ONLINE" <-#
@@ -130,7 +130,7 @@
                <div id="dehide_contenu">
                     <table>
                     <?php #on affiche la liste des gages
-                    doubleListe($GLOBALS['liste_player1'],$GLOBALS['liste_player2'],sizeof($GLOBALS['liste_player1'])); 
+                    doubleListe($GLOBALS['liste_player1'],$GLOBALS['liste_player2'],$GLOBALS['total_gage']); 
                     ?>
 
                     </table>

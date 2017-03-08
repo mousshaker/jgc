@@ -9,7 +9,7 @@
 */
 
 #-> DEFINITION DES VARIABLES GLOBALES <-#
-    global $viewContent,$erreur,$lastPlayer,$resultat_to_show,$resultat_URL,$count1,$count2,$choix1,$choix2;
+    global $viewContent,$erreur,$lastPlayer,$resultat_to_show,$resultat_URL,$count1,$count2,$choix1,$choix2,$limite_list;
 #-> END <-#
 
 #-> SELECTION DES LISTES DE GAGES (CLASSIQUE/ONLINE) <-#
@@ -104,10 +104,12 @@
          if(TYPE_GAGE==0){ # si version classique
             $player1 = 'doublePlayer_gage_play1';# on initialise player 1 pour choisir le bon fichier log
             $player2 = 'doublePlayer_gage_play2';
+            //$limite_list = $GLOBALS['total_gage'];
         }
         if(TYPE_GAGE==1){#  si version online
             $player1 = 'doublePlayer_online_gage_play1';# on initialise player 1 pour choisir le bon fichier log
             $player2 = 'doublePlayer_online_gage_play2';
+            //$limite_list = 20;
         }
 
         if (isset($_POST['player1'])){

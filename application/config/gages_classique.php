@@ -135,6 +135,25 @@ $GLOBALS['total_gage_8'] = count($GLOBALS['liste_8']);
 /*** page 9 ***/
 ### ILLUSTRATIONS ###
 
+###### GAGE ILLUSTRES ######
+
+$GLOBALS['limit_gage'] = 20;
+
+# gages filles #
+for($i=0;$i<=$GLOBALS['limit_gage'];$i++){
+    $GLOBALS['liste_player1'][] = PATH_IMG."/illustration/illu_girl_classic/".$i.".jpg";
+}
+$total_gage_SampleGirl = count($GLOBALS['liste_player1']);
+
+# gages homme #
+for($i=0;$i<=$GLOBALS['limit_gage'];$i++){
+    $GLOBALS['liste_player2'][] = PATH_IMG."/illustration/illu_boy_classic/".$i.".jpg";
+}
+$total_gage_SampleMan = count($GLOBALS['liste_player2']);
+
+
+
+/*
 # gages filles #
 $GLOBALS['liste_player1'] = array(
 1=> "https://66.media.tumblr.com/a9dcae0aebe53d4a80356de7e79a77f8/tumblr_oe7vk90W5r1unrs9bo1_1280.jpg",
@@ -219,6 +238,16 @@ $GLOBALS['liste_player2'] = array(
 
 
 );
-$total_gage_SampleMan = count($GLOBALS['liste_player2']);
-?>
 
+$total_gage_SampleMan = count($GLOBALS['liste_player2']);
+*/
+
+# Définition de la limite maxi = liste la plus longue de gages
+if($total_gage_SampleGirl>$total_gage_SampleMan){
+    $GLOBALS['total_gage'] = $total_gage_SampleGirl-1;
+}
+else{
+    $GLOBALS['total_gage'] = $total_gage_SampleMan-1;
+}
+
+?>

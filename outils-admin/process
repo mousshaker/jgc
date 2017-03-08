@@ -8,6 +8,7 @@
 
 ## A SAVOIR
     Les logs se trouvent dans application/data
+    Les images des listes d'illustration (doublePlayer) ne sont pas fournies dans l'application, vous devrez en cherchez vous-mêmes et les insérer dans /library/images/illustration/illu_boy_classic*online ou /library/images/illustration/illu_girl_classic*online et les nommer : 1.jpg, 2.jpg, etc.. (et pas 01.jpg, 02.jpg)
 
 ## FONCTIONNEMENT ##
     1/ La page ".php" qui se trouve dans /public appelle BOOSTRAP en envoyant les paramètres [codepage], [typepage], [typegage], [typeplay], $iLayoutController et
