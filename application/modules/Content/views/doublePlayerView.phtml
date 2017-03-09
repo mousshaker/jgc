@@ -10,7 +10,7 @@
 */
 
 #-> DEFINITION DES VARIABLES GLOBALES <-#
-    global $viewContent,$erreur,$lastPlayer,$resultat_to_show,$resultat_URL,$count1,$count2,$choix1,$choix2,$limite_list;
+    global $viewContent,$erreur,$lastPlayer,$resultat_to_show,$resultat_URL,$count1,$count2,$choix1,$choix2,$limite_list,$levelGage;
 #-> END <-#
 
 #-> AFFICHAGE/MASQUAGE BANDEAU "ONLINE" <-#
@@ -48,59 +48,70 @@
 	</div>
 <?php } ?>
 	<div class="contenu">
+	    <!-- selecteur de niveau -->
+	    <?php if(TYPE_GAGE ==1){ #si version Online ?>
+        <form method="post">
+           <select name="levelgage">
+                <option value="1"<?php if($levelGage == 1) { echo "selected" ; }?>>sensuel</option>
+                <option value="2" <?php if($levelGage == 2) { echo "selected" ; }?>>érotique</option>  
+            </select>
+            <input type="submit" value="<?php echo $GLOBALS['choose']; ?>" name="chooselvl">
+        </form>
+        <?php } ?>
 
-	<form method="post">
-			<input type="submit" class="<?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG" name="erase" value="<?php echo $GLOBALS['erase']; ?>" class="lanceur">
-	</form>
-	<table>
-		<tr>
-			<td class="tdNeutral">
-			    <!-- Surligne le dernier player -->
-				<?php if($lastPlayer==1){echo'<font class="colorBlanc tdFocus">ELLE</font>';}
-				else{ echo 'ELLE';}
-				?>
-			</td>
-			<td class="tdNeutral">
-			<!-- Surligne le dernier player -->
-				<?php if($lastPlayer==2){echo'<font class="colorBlanc tdFocus">LUI</font>';}
-				else{ echo 'LUI';}
-				?>
-			</td>
-		</tr>
-		<tr>
-			<td class="tdNeutral">
-				<form method="post" action="#result">
-						<input type="submit" class="<?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG" name="player1" value="<?php echo $GLOBALS['rollDice']; ?>" class="lanceur">
-				</form>
-			</td>
-			<td class="tdNeutral">
-				<form method="post" action="#result">
-						<input type="submit" class="<?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG" name="player2" value="<?php echo $GLOBALS['rollDice']; ?>" class="lanceur">
-				</form>
-			</td>
-		</tr>
-		<tr>
-			<td class=" CellinfoSmall">
-				Résultat pour ELLE
-			</td>
-			<td class=" CellinfoSmall">
-				Résultat pour LUI
-			</td>
-		</tr>
-		<tr>
-			<td class="tdNeutral">
-				<?php echo $count1; ?>
-			</td>
-			<td class="tdNeutral">
-				<?php echo $count2; ?>
-			</td>
-		</tr>
-	</table>
+        <!-- effacer les compteurs -->
+        <form method="post">
+                <input type="submit" class="<?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG" name="erase" value="<?php echo $GLOBALS['erase']; ?>" class="lanceur">
+        </form>
 
-
+        <!-- COMPTEURS -->
+        <table>
+            <tr>
+                <td class="tdNeutral">
+                    <!-- Surligne le dernier player -->
+                    <?php if($lastPlayer==1){echo'<font class="colorBlanc tdFocus">ELLE</font>';}
+                    else{ echo 'ELLE';}
+                    ?>
+                </td>
+                <td class="tdNeutral">
+                <!-- Surligne le dernier player -->
+                    <?php if($lastPlayer==2){echo'<font class="colorBlanc tdFocus">LUI</font>';}
+                    else{ echo 'LUI';}
+                    ?>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdNeutral">
+                    <form method="post" action="#result">
+                            <input type="submit" class="<?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG" name="player1" value="<?php echo $GLOBALS['rollDice']; ?>" class="lanceur">
+                    </form>
+                </td>
+                <td class="tdNeutral">
+                    <form method="post" action="#result">
+                            <input type="submit" class="<?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG" name="player2" value="<?php echo $GLOBALS['rollDice']; ?>" class="lanceur">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class=" CellinfoSmall">
+                    Résultat pour ELLE
+                </td>
+                <td class=" CellinfoSmall">
+                    Résultat pour LUI
+                </td>
+            </tr>
+            <tr>
+                <td class="tdNeutral">
+                    <?php echo $count1; ?>
+                </td>
+                <td class="tdNeutral">
+                    <?php echo $count2; ?>
+                </td>
+            </tr>
+        </table>
 	</div>
 
-
+    <!-- RESULTAT -->
 	<div id="result" class="resultat <?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG">
 		<?php 
         if(TYPE_PLAY == 0){ # si c'est jeu de dé
@@ -122,7 +133,7 @@
          ?>    
 	</div>
 	<?php 
-        if(TYPE_PLAY == 1){?>
+        if(TYPE_PLAY == 1){ # si c'est jeu gages illustrés?>
             <div class="marginBloc">
                 Pour rappel, vous pouvez afficher la liste des gages <?php echo $GLOBALS['page'.PAGE_CODE] ?>s possibles : <button class="show"><?php echo $GLOBALS['showHide'] ?></button>
             </div>

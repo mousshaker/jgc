@@ -66,6 +66,10 @@
     }
 #-> END <-#
 
+
+
+
+
 /* INFO : le $_GET['type'] est envoyé en paramètre dans le menu (Modules/Menu/views)*/
 
 #-> Exécution du bootstrap. <-#

@@ -9,18 +9,44 @@
 */
 
 #-> DEFINITION DES VARIABLES GLOBALES <-#
-    global $viewContent,$erreur,$lastPlayer,$resultat_to_show,$resultat_URL,$count1,$count2,$choix1,$choix2,$limite_list;
+    global $viewContent,$erreur,$lastPlayer,$resultat_to_show,$resultat_URL,$count1,$count2,$choix1,$choix2,$limite_list,$dataPath,$levelGage;
 #-> END <-#
 
-#-> SELECTION DES LISTES DE GAGES (CLASSIQUE/ONLINE) <-#
+#-> SELECTION DES CHEMINS DE FICHIERS GAGES (CLASSIQUE/ONLINE) <-#
     if(TYPE_GAGE == 0){
-        include(PATH_ABSOLUT.'/config/gages_classique.php');
-         $dataPath = PATH_VAR;
+        $dataPath = PATH_VAR;
+        $gagePageSource = PATH_ABSOLUT.'/config/gages_classique.php';
+         
     }
     if(TYPE_GAGE == 1){
-        include(PATH_ABSOLUT.'/config/gages_online.php');
-         $dataPath = PATH_VAR.'/online';
+        $dataPath = PATH_VAR.'/online';
+        $gagePageSource = PATH_ABSOLUT.'/config/gages_online.php';     
     }
+#-> END <-#
+
+
+#-> SETTING DU NIVEAU DE GAGE (utilisé dans gages_online*classique.php)
+    ## Si nouvelle sélection du niveau
+        if (isset($_POST['chooselvl'])){
+            # on vérifie que le fichier existe, sinon il se crée
+            wLogRead($dataPath,"levelGage");
+
+            # on efface le fichier précédant
+            wLogErase($dataPath,"levelGage");
+
+            # on écrit le nouveau résultat (numéro du gage) 
+            wLog($dataPath,"levelGage",$_POST['levelgage']);
+
+        }
+    ##
+    # sinon, par défaut, levelGage = valeur enregistrée en log
+    $levelGage = wLogRead($dataPath,"levelGage");
+    //$levelGageSelected = wLogRead($dataPath,"levelGage");
+    define('LEVEL_GAGE', $levelGage, true);
+#-> END <-#
+
+#-> INCLUSION DE FICHIER SOURCE DE GAGE <-#
+    include($gagePageSource);
 #-> END <-#
 
 #-> DEFINITION  DES VARIABLES UNIQUES <-#
@@ -28,6 +54,7 @@
     $lastPlayer = '';
     $dataPathGlobal = PATH_VAR;
 #-> END <-#
+
 
 
 #-> TRAITEMENT JEU DU 21 <-#
@@ -101,6 +128,7 @@
 
 #-> TRAITEMENTS GAGES HOMME / FEMME<-#
     if(TYPE_PLAY == 1){ # -> Liste de gages Homme / Femme
+        
          if(TYPE_GAGE==0){ # si version classique
             $player1 = 'doublePlayer_gage_play1';# on initialise player 1 pour choisir le bon fichier log
             $player2 = 'doublePlayer_gage_play2';
@@ -111,10 +139,11 @@
             $player2 = 'doublePlayer_online_gage_play2';
             //$limite_list = 20;
         }
+        
 
         if (isset($_POST['player1'])){
             $lastPlayer = 1; # on indique qui est le dernier joueur
-            $result_to_log=rand(1,sizeof($GLOBALS['liste_player1']));
+            $result_to_log=rand(1,sizeof($GLOBALS['liste_player1'])-1);
             $resultat_to_show = $result_to_log;
             $resultat_URL=$GLOBALS['liste_player1'][$resultat_to_show];
 
@@ -130,7 +159,7 @@
         }
         if (isset($_POST['player2'])){
             $lastPlayer = 2; # on indique qui est le dernier joueur
-            $result_to_log=rand(1,sizeof($GLOBALS['liste_player2']));
+            $result_to_log=rand(1,sizeof($GLOBALS['liste_player2'])-1);
             $resultat_to_show = $result_to_log;
             $resultat_URL=$GLOBALS['liste_player2'][$resultat_to_show];
             # on vérifie que le fichier existe, sinon il se crée
@@ -197,6 +226,5 @@
         $viewContent = 'doublePlayerView';
     }
 #-> END <-#
-
 
 

@@ -49,5 +49,6 @@ $GLOBALS['seeLastResult'] = "Voir le dernier résultat";
 $GLOBALS['rollDice'] = "Lancer le dé";
 $GLOBALS['showHide'] = "Afficher/ Masquer";
 $GLOBALS['erase'] = "Effacer les compteurs";
+$GLOBALS['choose'] = "Choisir";
 
 $GLOBALS['tableauSupplice'] = "https://docs.google.com/spreadsheets/d/1pSfqPnHZRBC7bCmwRqMumcFlhFkmoOe2jujtxOmQt9g/edit#gid=0";

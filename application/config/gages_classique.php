@@ -1,4 +1,6 @@
 <?php
+$dataPath = PATH_VAR;
+
 /*
 *Gages version CLASSIQUE
 */
@@ -137,16 +139,19 @@ $GLOBALS['total_gage_8'] = count($GLOBALS['liste_8']);
 
 ###### GAGE ILLUSTRES ######
 
-$GLOBALS['limit_gage'] = 20;
+
+#on calcule la limite en fonction du nombre de fichier dans chaque dossier image
+$limit_girl = countFiles(PATH_IMG.'/illustration/illu_girl_classic');
+$limit_boy = countFiles(PATH_IMG.'/illustration/illu_boy_classic');
 
 # gages filles #
-for($i=0;$i<=$GLOBALS['limit_gage'];$i++){
+for($i=0;$i<=$limit_girl;$i++){
     $GLOBALS['liste_player1'][] = PATH_IMG."/illustration/illu_girl_classic/".$i.".jpg";
 }
 $total_gage_SampleGirl = count($GLOBALS['liste_player1']);
 
 # gages homme #
-for($i=0;$i<=$GLOBALS['limit_gage'];$i++){
+for($i=0;$i<=$limit_boy;$i++){
     $GLOBALS['liste_player2'][] = PATH_IMG."/illustration/illu_boy_classic/".$i.".jpg";
 }
 $total_gage_SampleMan = count($GLOBALS['liste_player2']);

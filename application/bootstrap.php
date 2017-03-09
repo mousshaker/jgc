@@ -16,7 +16,8 @@
 #-> END <-#
 ?>
 <!-- Inclusion des styles CSS -->
-<style type="text/css">
+<!--style type="text/css"-->
+<style>
     <?php include(PATH_CONF.'/style.css'); ?>
 </style>
 

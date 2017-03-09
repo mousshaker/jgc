@@ -6,17 +6,24 @@
 */
 
 #-> DEFINITION DES VARIABLES GLOBALES <-#
-    global $viewContent,$erreur,$limit,$vGage,$resultat;
+    global $viewContent,$erreur,$limit,$vGage,$resultat,$dataPath;
 #-> END <-#
 
 
-#-> SELECTION DES LISTES DE GAGES (CLASSIQUE/ONLINE) <-#
+#-> SELECTION DES CHEMINS DE FICHIERS GAGES (CLASSIQUE/ONLINE) <-#
     if(TYPE_GAGE == 0){
-        include(PATH_ABSOLUT.'/config/gages_classique.php');    
+        $dataPath = PATH_VAR;
+        $gagePageSource = PATH_ABSOLUT.'/config/gages_classique.php';
+         
     }
     if(TYPE_GAGE == 1){
-        include(PATH_ABSOLUT.'/config/gages_online.php');   
+        $dataPath = PATH_VAR.'/online';
+        $gagePageSource = PATH_ABSOLUT.'/config/gages_online.php';     
     }
+#-> END <-#
+
+#-> INCLUSION DE FICHIER SOURCE DE GAGE <-#
+    include($gagePageSource);
 #-> END <-#
 
 #-> DEFINITION DES VARIABLES UNIQUES <-#

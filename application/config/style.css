@@ -385,6 +385,16 @@ form{
 	padding: 5px;
 	background:rgba(36,36,86,0.70);
 }
+.tdShowBoy{	
+	border-width: 1px;
+	padding: 5px;
+	background:rgba(70,110,160,0.70);
+}
+.tdShowGirl{	
+	border-width: 1px;
+	padding: 5px;
+	background:rgba(160,70,150,0.70);
+}
 .tdNeutral{
 	padding: 10px;
 }

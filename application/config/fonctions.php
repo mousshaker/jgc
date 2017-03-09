@@ -293,13 +293,31 @@ function listGage($limit,$vGage){
 function doubleListe($list1,$list2,$limit){
     for($i=1;$i<=$limit;$i++){
         echo '<tr>';
-        echo '<th>F '.$i.'</th>';
+        echo '<th class="tdShowGirl">F '.$i.'</th>';
         echo '<td class="tdShow" id="'.$i.'"><img src="'.$list1[$i].'" class="illuGage"></td>';
         echo '<td class="tdShow"><img src="'.$list2[$i].'" class="illuGage"></td>';
-        echo '<th>M '.$i.'</th>';
+        echo '<th class="tdShowBoy">M '.$i.'</th>';
         echo '</tr>';
     }
 }
+
+function countFiles($path)
+{
+    /* cette fonction remplace la fonction glog() en cas d'incompatibilité*/
+    $nbFichiers = -2;
+    $repertoire = opendir($path);
+                 
+    while ($fichier = readdir($repertoire))
+    {
+        if($fichier!=".DS_Store"){
+            $nbFichiers += 1;
+        }
+        //$nbFichiers += 1;
+    }
+                 
+    return (int) $nbFichiers;
+}
+
 
 
 
