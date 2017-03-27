@@ -572,14 +572,14 @@ form{
 
 /* VARIANTES CLASSES */
   
-    .coquine{
+    .niveau2{
         color: #ce3d88;
     }
-    .coquineBG{
+    .niveau2BG{
         color: #44123a;
         background-color:#ce3d88
     }
-    .coquineBtn{
+    .niveau2Btn{
        background:rgba(206,61,136,0.70);
         border: solid rgba(94,28,62,0.70) 2px;
         text-decoration: none;
@@ -592,27 +592,27 @@ form{
         color: #686868 !important;
     }
 
-    .deviant{
+    .niveau4{
         color: #7944e4;
     }
-    .deviantBG{
+    .niveau4BG{
         color: #a2a2cb;
         background-color:#7944e4
     }
-    .deviantBtn{
+    .niveau4Btn{
         background:rgba(121,68,228,0.70);
       border: solid rgba(7,7,53,0.70) 2px;
       text-decoration: none;
     }
 
-    .hot{
+    .niveau3{
         color: #ae0722;
     }
-    .hotBG{
+    .niveau3BG{
         color: #260606;
         background-color:#ae0722
     }
-    .hotBtn{
+    .niveau3Btn{
         background:rgba(174,7,34,0.70);
       font-size: 20px;
       padding: 10px 20px 10px 20px;
@@ -663,14 +663,14 @@ form{
       text-decoration: none;
     }
 
-    .sensuelle{
+    .niveau1{
         color: #ee9dd6;
     }
-    .sensuelleBG{
+    .Niveau1BG{
         color: #462f33;
         background-color:#ee9dd6
     }
-    .sensuelleBtn{
+    .niveau1Btn{
        background:rgba(238,157,214,0.70);
         border: solid rgba(88,58,79,0.70) 2px;
         text-decoration: none;
