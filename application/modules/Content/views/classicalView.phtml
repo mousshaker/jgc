@@ -25,13 +25,13 @@
 
 
 <div class="levelTitle <?php echo $GLOBALS['page'.PAGE_CODE]; ?>">
-<?php echo $GLOBALS['page'.PAGE_CODE]; ?><br>
+     <?php echo $GLOBALS['list'].' '.$GLOBALS['page'.PAGE_CODE]; ?><br>
 </div>
 <div class="wrapper" style="overflow-x:auto;">
     <!-- BOUTON LANCEUR -->
 	<div class="contenu">
 	<form method="post">
-			<input type="submit" class="<?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG" name="resultNb" value="<?php echo $GLOBALS['rollDice']; ?>" class="lanceur">
+			<input type="submit" class="<?php echo $GLOBALS['page'.PAGE_CODE]; ?>Btn" name="resultNb" value="<?php echo $GLOBALS['rollDice']; ?>" class="lanceur">
 	</form>
 	
 	<!-- BOUTON VOIR LE DERNIER RESULTAT -->
@@ -46,16 +46,13 @@
 	</div>
 
 	<!-- AFFICHAGE LISTE -->
-    <div class="marginBloc">
-        Pour rappel, vous pouvez afficher la liste des gages <?php echo $GLOBALS['page'.PAGE_CODE] ?>s possibles : <button class="show"><?php echo $GLOBALS['showHide'] ?></button>
-    </div>
-    <p3>
-        <?php #on affiche la liste des gages
+    <div class="marginBloc blocText">
+        <p>Pour rappel, vous pouvez afficher la liste des gages possibles : <button class="show"><?php echo $GLOBALS['showHide'] ?></button> </p>
+    
+    <p3><?php #on affiche la liste des gages
         listGage($limit,$vGage); ?>
     </p3>
-
+    </div>
 </div>
-
-
 
 

@@ -140,21 +140,34 @@ $GLOBALS['total_gage_8'] = count($GLOBALS['liste_8']);
 ###### GAGE ILLUSTRES ######
 
 
+if(LEVEL_GAGE == null){
+    define('LEVEL_GAGE', 1, true);
+}
+else{
+    $levelGage = wLogRead($dataPath,"levelGage");
+    define('LEVEL_GAGE', $levelGage, true);
+}
+
+
+
+
 #on calcule la limite en fonction du nombre de fichier dans chaque dossier image
-$limit_girl = countFiles(PATH_IMG.'/illustration/illu_girl_classic');
-$limit_boy = countFiles(PATH_IMG.'/illustration/illu_boy_classic');
+$limit_girl = countFiles(PATH_IMG.'/illustration/illu_girl_classic_lvl_'.LEVEL_GAGE);
+$limit_boy = countFiles(PATH_IMG.'/illustration/illu_boy_classic_lvl_'.LEVEL_GAGE);
+
 
 # gages filles #
 for($i=0;$i<=$limit_girl;$i++){
-    $GLOBALS['liste_player1'][] = PATH_IMG."/illustration/illu_girl_classic/".$i.".jpg";
+    $GLOBALS['liste_player1'][] = PATH_IMG."/illustration/illu_girl_classic_lvl_".LEVEL_GAGE."/".$i.".jpg";
 }
 $total_gage_SampleGirl = count($GLOBALS['liste_player1']);
 
 # gages homme #
 for($i=0;$i<=$limit_boy;$i++){
-    $GLOBALS['liste_player2'][] = PATH_IMG."/illustration/illu_boy_classic/".$i.".jpg";
+    $GLOBALS['liste_player2'][] = PATH_IMG."/illustration/illu_boy_classic_lvl_".LEVEL_GAGE."/".$i.".jpg";
 }
 $total_gage_SampleMan = count($GLOBALS['liste_player2']);
+
 
 
 

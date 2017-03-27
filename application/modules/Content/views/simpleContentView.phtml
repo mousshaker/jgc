@@ -17,9 +17,10 @@ Ce Module VIEW INDEX est donc vide, car le formulaire de connexion apparaît dan
 #-> END <-#?>
 
 <div class="wrapper" style="overflow-x:auto;">
-<h1><?php echo $GLOBALS['philoNa']; ?></h1>
+<h1><?php echo $GLOBALS['page'.PAGE_CODE]; ?></h1>
 	<div class="logBg">
-		<div class="log">
+		<div class="blocText">
+		<?php if(PAGE_CODE ==11){ # si Philosophie Na ?>
 			La philosophie Na est inspirée du peuple chinois éponyme (ethnologiquement connu sous le nom de <a href="https://fr.wikipedia.org/wiki/Moso" target="_blank">"peuple Moso"</a>).
 			<br>
 			C'est avant tout l'esprit "sans tabou" et leur rapport amoureux libres qui sont retenus (<a href="http://edit-biog.over-blog.com/article-35165208.html" target="_blank">en savoir +</a>).
@@ -41,6 +42,33 @@ Ce Module VIEW INDEX est donc vide, car le formulaire de connexion apparaît dan
 			<li>Ivre de désir et d'envie pour le plaisir d’autrui</li>
 			<li>Cultiver la vivacité de corps et d'esprit </li>
 			</ul>
+        <?php } 
+            if(PAGE_CODE ==12){ # si page "règles" ?>
+            <p>
+                Vous pouvez utiliser cette application comme une jeu complet, ou comme un simple complément (vous ne vous servez que du lanceur de dé pour un gage que vous avez obtenu d'une façon externe à l'application). <br>  
+            </p>
+            <p>
+                En cas de "jeu complet", vous utilisez l'application pour l'obtention des gages et le choix de ceux-ci. <br>
+                Dans ce cas, 2 possibilités s'offrent à vous :
+                <ul>
+                    <li>- Vous jouez au <a href="gage?codepage=10&typegage=0&typepage=1&typeplay=0">jeu du 21</a> et le perdant de chaque partie lance un dé parmi une des listes.</li>
+                    <li>- Vous choisissez entre joueurs une/pluieurs liste(s) et vous lancez le dé à tour de rôle jusqu'à épuisement de tous les gages.</li>
+                </ul>
+            </p>
+            <h3>Règles conventionnelles</h3>
+            <p>
+                Chaque joueur lance à tour de rôle le dé. <br>
+                Un joueur ne lance le dé qu'une fois le gage de l'autre effectué. Et ainsi de suite. <br>
+            </p>
+            <p>
+                Lorsqu'un joueur tombe plusieurs fois sur un même gage, il éxécute de nouveau le gage (sauf prérogative contraire fixée en début de partie entre les joueurs). <br>
+                Par convention, on estimera qu'au bout de la 3ème fois, le joueur peut relancer le dé pour obtenir un autre gage à la place. Néanmoins, si lors de ce nouveau lancé, il obtient encore un gage déjà réalisé, il devra l'éxécuter à nouveau ou bien éxécuter 2 gages au lieu de 1.
+            </p>
+            <p>
+                Dans le cas du jeu de 21, seul le joueur ayant perdu la partie lance le dé. <br>
+                Une fois son gage effectué, une nouvelle partie de 21 peut commencer.
+            </p>
+        <?php } ?>
 		</div>
 	</div>
 </div>

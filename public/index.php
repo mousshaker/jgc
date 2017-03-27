@@ -35,8 +35,14 @@
 #-> END <-#
 
 
-# 3/ On défini la page à router ## (ici : index [Ø])
-define('PAGE_CODE', '0', true);
+#-> 3/ DEFINITION DE LA PAGE A ROUTER (sensuel, hot,..) <-#
+    if(isset($_GET['codepage'])){
+        define('PAGE_CODE', $_GET['codepage'], true);
+    }
+    else{
+        define('PAGE_CODE', '0', true);# sinon par défaut -> index. 
+    }
+#-> END <-#
 
 # 4/ On défini le type de gage ## (classique, online)
 if(isset($_GET['typegage'])){

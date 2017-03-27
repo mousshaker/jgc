@@ -282,7 +282,7 @@ function listGage($limit,$vGage){
 		$number=$i+1;
 		//$gage="gage".$number;
 		$gages=$vGage[$number];
-		echo "<font size='1px'><i>[".$number."] - ".$gages."</i></font><br>";
+		echo "<i>[".$number."] - ".$gages."</i><br>";
 	}
     
     //echo "pouet";

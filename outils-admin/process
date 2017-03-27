@@ -58,6 +58,6 @@
 
     A savoir :
     - [typegage] type de gage : [0]classique, [1]online 
-    - [typepage] type de page  : [0]classique(pour des gages avec 1 dé et une liste), [1]doublePlayer (pour des gages avec 2 joueurs + 2 dés + 2 listes), [2]matrice (tableau de coorconées)) 
+    - [typepage] type de page  : [0]classique(pour des gages avec 1 dé et une liste), [1]doublePlayer (pour des gages avec 2 joueurs + 2 dés + 2 listes), [2]matrice (tableau de coorconées)), [3]simpleContent
     - [typeplay] : au sein de "doublePlayer" il y a 2 types de jeu  -> [0]jeu du 21, [1]le jeu de gage illustré)
     - [codepage] version de page : [0]Index, [1]sensuel, [2]coquin,... (cf translation_fr pour les autres clefs. Elles correspondent au "N" de $GLOBALS['pageN'])

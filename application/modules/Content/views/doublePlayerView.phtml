@@ -25,16 +25,19 @@
 
 
 <div class="levelTitle <?php echo $GLOBALS['page'.PAGE_CODE]; ?>">
-<?php echo $GLOBALS['page'.PAGE_CODE]; ?><br>
+    <?php echo $GLOBALS['list'].' '.$GLOBALS['page'.PAGE_CODE]; ?><br>
 </div>
 
 <div class="wrapper" style="overflow-x:auto;">
 <?php if (PAGE_CODE==9){ ?>
     <!-- gages illustrés -->
 	<div class="blocText">
-	La version illustrée est, comme son nom l'indique, une liste de gages illustrés chacun en image. Il n'y a qu'à reproduire ce qu'elle montre.<br>
-	Ici, les gages sont spécifiques Homme et Femme. Il faudra donc lancer le dé correspondant à l'un de ces 2 types de gages.<br>
-	Pour utiliser ces gages en version 'medley', vous pourrez retrouver les 'coordonées' des gages en affichant la liste. Les gages femme ayant F+N°, les gages homme M+N°.
+        <p>
+            La version illustrée est, comme son nom l'indique, une liste de gages illustrés chacun en image. Il n'y a qu'à reproduire ce qu'elles montrent.
+        </p>
+        <p>
+            Ici, les gages sont spécifiques Homme et Femme. Il faudra donc lancer le dé correspondant à l'un de ces 2 types de gages.
+        </p>
 	</div>
 <?php } ?>
 <?php if (PAGE_CODE==10){ ?>
@@ -48,63 +51,78 @@
 	</div>
 <?php } ?>
 	<div class="contenu">
-	    <!-- selecteur de niveau -->
+       <?php if(TYPE_PLAY >0){ #si version classique ?>
+        <p>
+            Cette liste comportant plusieurs niveaux d'intensité, sélectionnez ci-dessous celui de votre choix.
+        </p>     
+        
+        <?php if(TYPE_GAGE ==0){ #si version classique ?>
+        <form method="post">
+           <select name="levelgage">
+                <option value="1"<?php if($levelGage == 1) { echo "selected" ; }?>>sensuel</option>
+                <option value="2" <?php if($levelGage == 2) { echo "selected" ; }?>>érotique</option> 
+                <option value="3" <?php if($levelGage == 3) { echo "selected" ; }?>>déviant</option>  
+            </select>
+            <input type="submit" value="<?php echo $GLOBALS['choose']; ?>" name="chooselvl" class="darkButton">
+        </form>
+        <?php } ?>
+        
+        <!-- selecteur de niveau -->
 	    <?php if(TYPE_GAGE ==1){ #si version Online ?>
+        
         <form method="post">
            <select name="levelgage">
                 <option value="1"<?php if($levelGage == 1) { echo "selected" ; }?>>sensuel</option>
                 <option value="2" <?php if($levelGage == 2) { echo "selected" ; }?>>érotique</option>  
             </select>
-            <input type="submit" value="<?php echo $GLOBALS['choose']; ?>" name="chooselvl">
+            <input type="submit" value="<?php echo $GLOBALS['choose']; ?>" name="chooselvl" class="darkButton">
         </form>
-        <?php } ?>
+        <?php
+           } 
+         }?>
 
         <!-- effacer les compteurs -->
         <form method="post">
-                <input type="submit" class="<?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG" name="erase" value="<?php echo $GLOBALS['erase']; ?>" class="lanceur">
+                <input type="submit" class="darkButton" name="erase" value="<?php echo $GLOBALS['erase']; ?>" class="lanceur">
         </form>
 
         <!-- COMPTEURS -->
         <table>
             <tr>
-                <td class="tdNeutral">
-                    <!-- Surligne le dernier player -->
-                    <?php if($lastPlayer==1){echo'<font class="colorBlanc tdFocus">ELLE</font>';}
-                    else{ echo 'ELLE';}
-                    ?>
-                </td>
-                <td class="tdNeutral">
                 <!-- Surligne le dernier player -->
-                    <?php if($lastPlayer==2){echo'<font class="colorBlanc tdFocus">LUI</font>';}
-                    else{ echo 'LUI';}
-                    ?>
+                <td <?php if($lastPlayer==1){echo'class="tdFocus"';}else{ echo 'class="tdShowGirl"';} ?>>
+                    <?php echo $GLOBALS['player1']; ?>
+                </td>
+                <!-- Surligne le dernier player -->
+                <td <?php if($lastPlayer==2){echo'class="tdFocus"';}else{ echo 'class="tdShowBoy"';} ?>>
+                    <?php echo $GLOBALS['player2']; ?>
                 </td>
             </tr>
             <tr>
                 <td class="tdNeutral">
                     <form method="post" action="#result">
-                            <input type="submit" class="<?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG" name="player1" value="<?php echo $GLOBALS['rollDice']; ?>" class="lanceur">
+                            <input type="submit" name="player1" value="<?php echo $GLOBALS['rollDice']; ?>" <?php if($lastPlayer==1 || $count1==21 || $count2==21){echo'disabled class="disabledBtn lanceur"';}else{echo'class="'.$GLOBALS['page'.PAGE_CODE].'Btn lanceur"';} ?> >
                     </form>
                 </td>
                 <td class="tdNeutral">
                     <form method="post" action="#result">
-                            <input type="submit" class="<?php echo $GLOBALS['page'.PAGE_CODE]; ?>BG" name="player2" value="<?php echo $GLOBALS['rollDice']; ?>" class="lanceur">
+                            <input type="submit" name="player2" value="<?php echo $GLOBALS['rollDice']; ?>" <?php if($lastPlayer==2 || $count2==21 || $count1==21){echo'disabled class="disabledBtn lanceur"';}else{echo'class="'.$GLOBALS['page'.PAGE_CODE].'Btn lanceur"';} ?> >
                     </form>
                 </td>
             </tr>
             <tr>
-                <td class=" CellinfoSmall">
-                    Résultat pour ELLE
+                <td class=" CellinfoSmall"> <!-- result for P1 -->
+                    <?php echo $GLOBALS['resultFor'].' '.$GLOBALS['player1']; ?>
                 </td>
-                <td class=" CellinfoSmall">
-                    Résultat pour LUI
+                <td class=" CellinfoSmall"><!-- result for P2 -->
+                    <?php echo $GLOBALS['resultFor'].' '.$GLOBALS['player2']; ?>
                 </td>
             </tr>
             <tr>
-                <td class="tdNeutral">
+                <td class="tdShowGirl">
                     <?php echo $count1; ?>
                 </td>
-                <td class="tdNeutral">
+                <td class="tdShowBoy">
                     <?php echo $count2; ?>
                 </td>
             </tr>
@@ -121,10 +139,10 @@
                 echo '<br><font class="resultSecondary">(1er Dé : '.$choix1.' | 2nd Dé : '.$choix2.')</font><br>';
             }
             if($count1==21){
-                echo 'JOUEUR 1 GAGNE !<br>';
+                echo '<div class="tdShowGirl">'.$GLOBALS['player1'].' '.$GLOBALS['win'].' !</div>';
             }
             if($count2==21){
-                echo 'JOUEUR 2 GAGNE !';
+                echo '<div class="tdShowBoy">'.$GLOBALS['player2'].' '.$GLOBALS['win'].' ! !</div>';
             }                
         }
         if(TYPE_PLAY == 1){ # si c'est gage illustré
@@ -135,7 +153,7 @@
 	<?php 
         if(TYPE_PLAY == 1){ # si c'est jeu gages illustrés?>
             <div class="marginBloc">
-                Pour rappel, vous pouvez afficher la liste des gages <?php echo $GLOBALS['page'.PAGE_CODE] ?>s possibles : <button class="show"><?php echo $GLOBALS['showHide'] ?></button>
+                Pour rappel, vous pouvez afficher la liste des gages possibles : <button class="show"><?php echo $GLOBALS['showHide'] ?></button>
             </div>
             <p3>
                <div id="dehide_contenu">
