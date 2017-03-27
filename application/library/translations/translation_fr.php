@@ -8,19 +8,19 @@ Fichier de traduction des variables globales permettant le remplacement de texte
 
 $GLOBALS['alphabet'] = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
 
-$GLOBALS['creator'] = 'YOALAD';
+$GLOBALS['creator'] = 'Whoroot';
 
-$siteTitle = "Jeu de gages coquins";
+$siteTitle = "Jeu de gages";
 $siteTitleShort = "JGC";
 
 ## Configuration des noms de page ##
 $GLOBALS['page0'] = "index";
-$GLOBALS['page1'] = "sensuelle";
-$GLOBALS['page2'] = "coquine";
-$GLOBALS['page3'] = "hot";
-$GLOBALS['page4'] = "supplice";
+$GLOBALS['page1'] = "Niveau1";
+$GLOBALS['page2'] = "Niveau2";
+$GLOBALS['page3'] = "Niveau3";
+$GLOBALS['page4'] = "Niveau4";
 $GLOBALS['page5'] = "matrice";
-$GLOBALS['page6'] = "deviant";
+$GLOBALS['page6'] = "Niveau5";
 $GLOBALS['page7'] = "jeu21";
 $GLOBALS['page8'] = "medley";
 $GLOBALS['page9'] = "illustree";
@@ -62,4 +62,4 @@ $GLOBALS['win'] = "gagne";
 $GLOBALS['resultFor'] = "Résultat pour";
 
 
-$GLOBALS['tableauSupplice'] = "https://docs.google.com/spreadsheets/d/1pSfqPnHZRBC7bCmwRqMumcFlhFkmoOe2jujtxOmQt9g/edit#gid=0";
+$GLOBALS['tableauSupplice'] = "https://docs.google.com/";
