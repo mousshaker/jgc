@@ -58,13 +58,7 @@ $GLOBALS['total_gage_8'] = count($GLOBALS['liste_8']);
 
 
 
-if(LEVEL_GAGE == null){
-    define('LEVEL_GAGE', 1, true);
-}
-else{
-    $levelGage = wLogRead($dataPath,"levelGage");
-    define('LEVEL_GAGE', $levelGage, true);
-}
+
 
 
 ###### GAGE ILLUSTRES ######

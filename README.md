@@ -23,6 +23,3 @@ Le fichier "process" ainsi que les schémas et le présent fichier README.dm peu
 <li>- des logs (volontairement non accessible depuis le front. Il faut aller chercher les fichiers dans /data)</li>
 <li>- 1 fichier PROCESS dévrivant le fonctionnement de l'application</li>
 </ul>
-
-<h2>Notes / infos </h2>
-Attention : l'image de background est ici à titre illustratif, mais aucun droit d'utilisation n'a été cédé par l'auteur de la photo. Pensez à remplacer l'exemple par une photo dont vous avez les droits nécessaires.

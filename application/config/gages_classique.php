@@ -70,15 +70,6 @@ $GLOBALS['total_gage_8'] = count($GLOBALS['liste_8']);
 ###### GAGE ILLUSTRES ######
 
 
-if(LEVEL_GAGE == null){
-    define('LEVEL_GAGE', 1, true);
-}
-else{
-    $levelGage = wLogRead($dataPath,"levelGage");
-    define('LEVEL_GAGE', $levelGage, true);
-}
-
-
 
 
 #on calcule la limite en fonction du nombre de fichier dans chaque dossier image

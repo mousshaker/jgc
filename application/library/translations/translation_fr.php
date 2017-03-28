@@ -1,7 +1,6 @@
 <?php
 /*
-@Mousshaker
-
+@Whoroot
 Fichier de traduction des variables globales permettant le remplacement de texte en diverses langues
 
 */
@@ -25,7 +24,7 @@ $GLOBALS['page7'] = "jeu21";
 $GLOBALS['page8'] = "medley";
 $GLOBALS['page9'] = "illustree";
 $GLOBALS['page10'] = "jeu21";
-$GLOBALS['page11'] = "Philosophie Na";
+$GLOBALS['page11'] = "Page d'info";
 $GLOBALS['page12'] = "règles";
 
 ## Configuration des noms des Modules de templates
@@ -43,9 +42,9 @@ $GLOBALS['view0'] = "layout";
 ## configuration des intitulés ##
 $GLOBALS['counter'] = "compteur";
 $GLOBALS['log'] = "logs";
-$GLOBALS['online'] = "version online";
-$GLOBALS['classic'] = "version classique";
-$GLOBALS['philoNa'] = $GLOBALS['page11'];
+$GLOBALS['online'] = "Version online";
+$GLOBALS['classic'] = "Version classique";
+$GLOBALS['infos'] = $GLOBALS['page11'];
 
 $GLOBALS['seeLastResult'] = "Voir le dernier résultat";
 $GLOBALS['rollDice'] = "LANCER";
@@ -55,11 +54,13 @@ $GLOBALS['choose'] = "CHOISIR";
 $GLOBALS['list'] = "Liste";
 $GLOBALS['player1'] = "Joueur 1";
 $GLOBALS['player2'] = "Joueur 2";
+$GLOBALS['welcome'] = "Bienvenue";
 
 
 ## TEXTES ##
 $GLOBALS['win'] = "gagne";
 $GLOBALS['resultFor'] = "Résultat pour";
+$GLOBALS['howToPlay'] = "Comment jouer";
 
 
 $GLOBALS['tableauSupplice'] = "https://docs.google.com/";

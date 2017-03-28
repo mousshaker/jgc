@@ -15,18 +15,17 @@ if(TYPE_GAGE ==1){
 <?php } ?>
 
 <div class="wrapper" style="overflow-x:auto;">
-<h1>Bienvenu sur le jeu de gages coquins</h1>
+<h1><?php echo $GLOBALS['welcome']; ?></h1>
 	<div class="blocText">
     <?php if(TYPE_GAGE == 1){ ?>
-        <h3>Version online ?</h3>
+        <h3><?php echo $GLOBALS['online']; ?> ?</h3>
 	    <p>
 	        Et oui ! Si vous êtes géographiquement loin de votre partenaire, cette version est spécialement adaptée au "jeu à distance" ! <br>
 		    Comme sur la version <a href="index?typegage=0">"CLASSIQUE"</a>, vous disposez de plusieurs niveaux de gages, et même d'une version <a href="gage?codepage=9&typegage=1&typepage=1&typeplay=1" class="<?php echo $GLOBALS['page9']; ?>">Illustrée</a> de photos à reproduire (ou desquelles vous inspirer).
         </p>
-        <h3>Comment jouer ?</h3>
+        <h3><?php echo $GLOBALS['howToPlay']; ?> ?</h3>
         <p>
             Suivant le même principe que la "version classique", en fonction du niveau d'intensité que vous souhaitez jouer, cliquez dans le menu en haut.<br>
-		    Suivant le niveau sélectionné, les gages seront plus ou moins osés, allant du sensuel soft à l'osé très franc.
         </p>
 		    
 		<p>
@@ -39,14 +38,14 @@ if(TYPE_GAGE ==1){
 		    C'est une petite application de choix aléatoire de gages coquins à réaliser entre joueurs avertis.<br>
           Vous pouvez consulter <a href="index?typepage=3&codepage=12">les règles</a> pour + de détails.
            
-        <h3>Comment jouer ?</h3>
+        <h3><?php echo $GLOBALS['howToPlay']; ?> ?</h3>
 		<p>
 		    Pour jouer, sélectionnez un "niveau" de gage dans le menu du haut. <br>
 		    Ensuite, en cliquant sur le bouton "LANCER", vous obtenez UN gage à faire parmi la liste prédéfinie sous forme de texte descriptif ou d'images (cf version <a href="gage?codepage=9&typegage=0&typepage=1&typeplay=1" class="<?php echo $GLOBALS['page9']; ?>">Illustrée</a>). <br>
 		    Vous pouvez à tout moment consulter la liste complète des gages en cliquant sur AFFICHER/MASQUER
         </p>
 		</p>
-		<h3>Version online ?</h3>
+		<h3><?php echo $GLOBALS['online']; ?> ?</h3>
 		<p>
 		Et oui ! Si vous êtes géographiquement loin de votre partenaire, vous pouvez aussi jouer ! <br>
 		Pour cela, utilisez la <a href="index?typegage=1" class="<?php echo $GLOBALS['page0']; ?>"><?php echo $GLOBALS['online']; ?> </a> avec des gages spéciaux "longue distance".<br>

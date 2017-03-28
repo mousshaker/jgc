@@ -59,9 +59,9 @@
         <?php if(TYPE_GAGE ==0){ #si version classique ?>
         <form method="post">
            <select name="levelgage">
-                <option value="1"<?php if($levelGage == 1) { echo "selected" ; }?>>sensuel</option>
-                <option value="2" <?php if($levelGage == 2) { echo "selected" ; }?>>érotique</option> 
-                <option value="3" <?php if($levelGage == 3) { echo "selected" ; }?>>déviant</option>  
+                <option value="1"<?php if($levelGage == 1) { echo "selected" ; }?>><?php echo $GLOBALS['page1']; ?></option>
+                <option value="2" <?php if($levelGage == 2) { echo "selected" ; }?>><?php echo $GLOBALS['page2']; ?></option> 
+                <option value="3" <?php if($levelGage == 3) { echo "selected" ; }?>><?php echo $GLOBALS['page3']; ?></option>  
             </select>
             <input type="submit" value="<?php echo $GLOBALS['choose']; ?>" name="chooselvl" class="darkButton">
         </form>
@@ -72,8 +72,8 @@
         
         <form method="post">
            <select name="levelgage">
-                <option value="1"<?php if($levelGage == 1) { echo "selected" ; }?>>sensuel</option>
-                <option value="2" <?php if($levelGage == 2) { echo "selected" ; }?>>érotique</option>  
+                <option value="1"<?php if($levelGage == 1) { echo "selected" ; }?>><?php echo $GLOBALS['page1']; ?></option>
+                <option value="2" <?php if($levelGage == 2) { echo "selected" ; }?>><?php echo $GLOBALS['page2']; ?></option>  
             </select>
             <input type="submit" value="<?php echo $GLOBALS['choose']; ?>" name="chooselvl" class="darkButton">
         </form>

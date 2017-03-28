@@ -22,7 +22,12 @@
 #-> 1/ DEFINITION DU CONTROLLER CONTENT A EXECUTER <-#
     /* Détermine le controller du CONTENT à executer en fonction du type de page (gage classique, doublePlayer, matrice) */
 
-    ##-> DEFINITION DU TYPE DE PAGE <-##
+##-> DEFINITION DU LEVEL DE GAGE (interrogé dans les fichiers gage_online*classique) <-##
+    if(LEVEL_GAGE < 1){
+        define('LEVEL_GAGE', 1, true);
+    }
+    
+##-> DEFINITION DU TYPE DE PAGE <-##
     if(isset($_GET['typepage'])){
         if($_GET['typepage']==1){ # doublePlayer
             ###-> DEFINITION DU CONTROLLER <-###
